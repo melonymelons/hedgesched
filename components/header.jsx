@@ -6,10 +6,10 @@ const Header = () => {
         <Link href={"/"} className= "flex items-center">
         <Image 
             src = "/logo.png" 
-            width = "150" 
-            height = "60" 
+            width = "180" 
+            height = "90" 
             alt = "HEDGE Logo"
-            className = "h-16 w-auto"
+            className = "h-23 w-auto"
         />
     </Link>
     </nav>);
