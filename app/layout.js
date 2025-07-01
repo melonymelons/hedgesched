@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
      <body> <div className={inter.className}>
-      {/* Header */}
+      {/* Header */} 
       <Header />
       <main className="min-h-screen bg-gradient-to-b from-red-200 to-white">{children}</main>
       {/* Footer */}
