@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import {Inter} from 'next/font/google'
 import "./globals.css";
 import Header from "@/components/header";
+import { ClerkProvider } from "@clerk/nextjs";
 
 export const metadata = {
   title: "HEDGE 调度器",
@@ -9,14 +10,15 @@ export const metadata = {
 };
 
 const inter = Inter({subsets: ["latin"]});
-
+ 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
+  return ( 
+    <ClerkProvider>
+    <html lang="en"> 
      <body> <div className={inter.className}>
-      {/* Header */} 
-      <Header />
-      <main className="min-h-screen bg-gradient-to-b from-red-200 to-white">{children}</main>
+      {/* Header */}  
+      <Header /> 
+      <main className="min-h-screen bg-gradient-to-b from-red-300 to-white">{children}</main>
       {/* Footer */}
       </div>
       <footer className="bg-black py-12">
@@ -26,5 +28,6 @@ export default function RootLayout({ children }) {
       </footer>
       </body>
     </html>
+    </ClerkProvider>
   );
 }
