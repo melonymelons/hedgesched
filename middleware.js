@@ -4,7 +4,7 @@ const isProtectedRoute = createRouteMatcher(['/dashboard(.*)', '/events(.*)', '/
 
 export default clerkMiddleware((auth, req) => {
     if(!auth().userId && isProtectedRoute(req)){
-        return auth().redirectToSignIn();  
+        return auth().redirectToSignIn();   
     }
 }); 
 
