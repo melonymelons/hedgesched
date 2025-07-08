@@ -63,7 +63,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(rsc)/./node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ \"(rsc)/./node_modules/next/dist/client/app-dir/link.js\");\n/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/image */ \"(rsc)/./node_modules/next/dist/api/image.js\");\n/* harmony import */ var _ui_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ui/button */ \"(rsc)/./components/ui/button.jsx\");\n/* harmony import */ var _barrel_optimize_names_PenBox_lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! __barrel_optimize__?names=PenBox!=!lucide-react */ \"(rsc)/./node_modules/lucide-react/dist/esm/icons/square-pen.js\");\n/* harmony import */ var _clerk_nextjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @clerk/nextjs */ \"(rsc)/./node_modules/@clerk/nextjs/dist/esm/index.js\");\n/* harmony import */ var _clerk_nextjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @clerk/nextjs */ \"(rsc)/./node_modules/@clerk/nextjs/dist/esm/client-boundary/uiComponents.js\");\n/* harmony import */ var _user_menu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./user-menu */ \"(rsc)/./components/user-menu.jsx\");\n\n\n\n\n\n\n\nconst Header = ()=>{\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"nav\", {\n        className: \"mx-auto py-2 px-4 flex justify-between items-center shadow-md border-b-2\",\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {\n                href: \"/\",\n                className: \"flex items-center\",\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(next_image__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n                    src: \"/logo.png\",\n                    width: \"160\",\n                    height: \"70\",\n                    alt: \"HEDGE Logo\",\n                    className: \"h-18 w-auto\"\n                }, void 0, false, {\n                    fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n                    lineNumber: 11,\n                    columnNumber: 9\n                }, undefined)\n            }, void 0, false, {\n                fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n                lineNumber: 10,\n                columnNumber: 9\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: \"flex items-center gap-4\",\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {\n                        href: \"/events?create=true\",\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_ui_button__WEBPACK_IMPORTED_MODULE_3__.Button, {\n                            className: \"flex items-center gap-2\",\n                            children: [\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_barrel_optimize_names_PenBox_lucide_react__WEBPACK_IMPORTED_MODULE_5__[\"default\"], {\n                                    size: 18\n                                }, void 0, false, {\n                                    fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n                                    lineNumber: 20,\n                                    columnNumber: 92\n                                }, undefined),\n                                \"Create Event\"\n                            ]\n                        }, void 0, true, {\n                            fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n                            lineNumber: 20,\n                            columnNumber: 48\n                        }, undefined)\n                    }, void 0, false, {\n                        fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n                        lineNumber: 20,\n                        columnNumber: 13\n                    }, undefined),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_clerk_nextjs__WEBPACK_IMPORTED_MODULE_6__.SignedOut, {\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_clerk_nextjs__WEBPACK_IMPORTED_MODULE_7__.SignInButton, {\n                            forceRedirectUrl: \"/dashboard\",\n                            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_ui_button__WEBPACK_IMPORTED_MODULE_3__.Button, {\n                                variant: \"outline\",\n                                children: \"Login\"\n                            }, void 0, false, {\n                                fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n                                lineNumber: 23,\n                                columnNumber: 21\n                            }, undefined)\n                        }, void 0, false, {\n                            fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n                            lineNumber: 22,\n                            columnNumber: 17\n                        }, undefined)\n                    }, void 0, false, {\n                        fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n                        lineNumber: 21,\n                        columnNumber: 13\n                    }, undefined),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_clerk_nextjs__WEBPACK_IMPORTED_MODULE_6__.SignedIn, {\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_user_menu__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {}, void 0, false, {\n                            fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n                            lineNumber: 27,\n                            columnNumber: 17\n                        }, undefined)\n                    }, void 0, false, {\n                        fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n                        lineNumber: 26,\n                        columnNumber: 13\n                    }, undefined)\n                ]\n            }, void 0, true, {\n                fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n                lineNumber: 19,\n                columnNumber: 9\n            }, undefined)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n        lineNumber: 9,\n        columnNumber: 13\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9jb21wb25lbnRzL2hlYWRlci5qc3giLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7O0FBQTZCO0FBQ0U7QUFDTTtBQUNDO0FBQ3dDO0FBQzNDO0FBRW5DLE1BQU1TLFNBQVM7SUFDWCxxQkFBUSw4REFBQ0M7UUFBSUMsV0FBVTs7MEJBQ25CLDhEQUFDWCxrREFBSUE7Z0JBQUNZLE1BQU07Z0JBQUtELFdBQVc7MEJBQzVCLDRFQUFDVixrREFBS0E7b0JBQ0ZZLEtBQU07b0JBQ05DLE9BQVE7b0JBQ1JDLFFBQVM7b0JBQ1RDLEtBQU07b0JBQ05MLFdBQVk7Ozs7Ozs7Ozs7OzBCQUdoQiw4REFBQ007Z0JBQUlOLFdBQVk7O2tDQUNiLDhEQUFDWCxrREFBSUE7d0JBQUNZLE1BQU87a0NBQXNCLDRFQUFDViw4Q0FBTUE7NEJBQUNTLFdBQVU7OzhDQUEwQiw4REFBQ1Isa0ZBQU1BO29DQUFDZSxNQUFNOzs7Ozs7Z0NBQUs7Ozs7Ozs7Ozs7OztrQ0FDbEcsOERBQUNiLG9EQUFTQTtrQ0FDTiw0RUFBQ0MsdURBQVlBOzRCQUFDYSxrQkFBaUI7c0NBQzNCLDRFQUFDakIsOENBQU1BO2dDQUFDa0IsU0FBUTswQ0FBVTs7Ozs7Ozs7Ozs7Ozs7OztrQ0FHbEMsOERBQUNoQixtREFBUUE7a0NBQ0wsNEVBQUNJLGtEQUFRQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUl6QjtBQUVBLGlFQUFlQyxNQUFNQSxFQUFBIiwic291cmNlcyI6WyIvVXNlcnMvaGx1by9Eb2N1bWVudHMvR2l0SHViL2hlZGdlc2NoZWQvY29tcG9uZW50cy9oZWFkZXIuanN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBMaW5rIGZyb20gXCJuZXh0L2xpbmtcIjtcbmltcG9ydCBJbWFnZSBmcm9tIFwibmV4dC9pbWFnZVwiO1xuaW1wb3J0IHsgQnV0dG9uIH0gZnJvbSBcIi4vdWkvYnV0dG9uXCI7XG5pbXBvcnQgeyBQZW5Cb3ggfSBmcm9tIFwibHVjaWRlLXJlYWN0XCI7XG5pbXBvcnQgeyBTaWduZWRJbiwgU2lnbmVkT3V0LCBTaWduSW5CdXR0b24sIFVzZXJCdXR0b24gfSBmcm9tIFwiQGNsZXJrL25leHRqc1wiO1xuaW1wb3J0IFVzZXJNZW51IGZyb20gXCIuL3VzZXItbWVudVwiO1xuIFxuY29uc3QgSGVhZGVyID0gKCkgPT4ge1xuICAgIHJldHVybiAoPG5hdiBjbGFzc05hbWU9XCJteC1hdXRvIHB5LTIgcHgtNCBmbGV4IGp1c3RpZnktYmV0d2VlbiBpdGVtcy1jZW50ZXIgc2hhZG93LW1kIGJvcmRlci1iLTJcIj5cbiAgICAgICAgPExpbmsgaHJlZj17XCIvXCJ9IGNsYXNzTmFtZT0gXCJmbGV4IGl0ZW1zLWNlbnRlclwiPlxuICAgICAgICA8SW1hZ2UgXG4gICAgICAgICAgICBzcmMgPSBcIi9sb2dvLnBuZ1wiIFxuICAgICAgICAgICAgd2lkdGggPSBcIjE2MFwiIFxuICAgICAgICAgICAgaGVpZ2h0ID0gXCI3MFwiIFxuICAgICAgICAgICAgYWx0ID0gXCJIRURHRSBMb2dvXCJcbiAgICAgICAgICAgIGNsYXNzTmFtZSA9IFwiaC0xOCB3LWF1dG9cIlxuICAgICAgICAvPlxuICAgIDwvTGluaz4gXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lID0gXCJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtNFwiPiBcbiAgICAgICAgICAgIDxMaW5rIGhyZWYgPSAnL2V2ZW50cz9jcmVhdGU9dHJ1ZSc+PEJ1dHRvbiBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMlwiPjxQZW5Cb3ggc2l6ZT17MTh9Lz5DcmVhdGUgRXZlbnQ8L0J1dHRvbj48L0xpbms+XG4gICAgICAgICAgICA8U2lnbmVkT3V0PiBcbiAgICAgICAgICAgICAgICA8U2lnbkluQnV0dG9uIGZvcmNlUmVkaXJlY3RVcmw9XCIvZGFzaGJvYXJkXCI+XG4gICAgICAgICAgICAgICAgICAgIDxCdXR0b24gdmFyaWFudD1cIm91dGxpbmVcIj5Mb2dpbjwvQnV0dG9uPlxuICAgICAgICAgICAgICAgIDwvU2lnbkluQnV0dG9uPlxuICAgICAgICAgICAgPC9TaWduZWRPdXQ+XG4gICAgICAgICAgICA8U2lnbmVkSW4+XG4gICAgICAgICAgICAgICAgPFVzZXJNZW51Lz5cbiAgICAgICAgICAgIDwvU2lnbmVkSW4+XG4gICAgICAgIDwvZGl2PlxuICAgIDwvbmF2Pik7XG59XG5cbmV4cG9ydCBkZWZhdWx0IEhlYWRlciJdLCJuYW1lcyI6WyJMaW5rIiwiSW1hZ2UiLCJCdXR0b24iLCJQZW5Cb3giLCJTaWduZWRJbiIsIlNpZ25lZE91dCIsIlNpZ25JbkJ1dHRvbiIsIlVzZXJCdXR0b24iLCJVc2VyTWVudSIsIkhlYWRlciIsIm5hdiIsImNsYXNzTmFtZSIsImhyZWYiLCJzcmMiLCJ3aWR0aCIsImhlaWdodCIsImFsdCIsImRpdiIsInNpemUiLCJmb3JjZVJlZGlyZWN0VXJsIiwidmFyaWFudCJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(rsc)/./components/header.jsx\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(rsc)/./node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ \"(rsc)/./node_modules/next/dist/client/app-dir/link.js\");\n/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/image */ \"(rsc)/./node_modules/next/dist/api/image.js\");\n/* harmony import */ var _ui_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ui/button */ \"(rsc)/./components/ui/button.jsx\");\n/* harmony import */ var _barrel_optimize_names_PenBox_lucide_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! __barrel_optimize__?names=PenBox!=!lucide-react */ \"(rsc)/./node_modules/lucide-react/dist/esm/icons/square-pen.js\");\n/* harmony import */ var _clerk_nextjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @clerk/nextjs */ \"(rsc)/./node_modules/@clerk/nextjs/dist/esm/index.js\");\n/* harmony import */ var _clerk_nextjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @clerk/nextjs */ \"(rsc)/./node_modules/@clerk/nextjs/dist/esm/client-boundary/uiComponents.js\");\n/* harmony import */ var _user_menu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./user-menu */ \"(rsc)/./components/user-menu.jsx\");\n/* harmony import */ var _lib_checkUser__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/lib/checkUser */ \"(rsc)/./lib/checkUser.js\");\n\n\n\n\n\n\n\n\nconst Header = async ()=>{\n    await (0,_lib_checkUser__WEBPACK_IMPORTED_MODULE_5__.checkUser)();\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"nav\", {\n        className: \"mx-auto py-2 px-4 flex justify-between items-center shadow-md border-b-2\",\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {\n                href: \"/\",\n                className: \"flex items-center\",\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(next_image__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n                    src: \"/logo.png\",\n                    width: \"160\",\n                    height: \"70\",\n                    alt: \"HEDGE Logo\",\n                    className: \"h-18 w-auto\"\n                }, void 0, false, {\n                    fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n                    lineNumber: 15,\n                    columnNumber: 9\n                }, undefined)\n            }, void 0, false, {\n                fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n                lineNumber: 14,\n                columnNumber: 9\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: \"flex items-center gap-4\",\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {\n                        href: \"/events?create=true\",\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_ui_button__WEBPACK_IMPORTED_MODULE_3__.Button, {\n                            className: \"flex items-center gap-2\",\n                            children: [\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_barrel_optimize_names_PenBox_lucide_react__WEBPACK_IMPORTED_MODULE_6__[\"default\"], {\n                                    size: 18\n                                }, void 0, false, {\n                                    fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n                                    lineNumber: 24,\n                                    columnNumber: 92\n                                }, undefined),\n                                \"Create Event\"\n                            ]\n                        }, void 0, true, {\n                            fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n                            lineNumber: 24,\n                            columnNumber: 48\n                        }, undefined)\n                    }, void 0, false, {\n                        fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n                        lineNumber: 24,\n                        columnNumber: 13\n                    }, undefined),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_clerk_nextjs__WEBPACK_IMPORTED_MODULE_7__.SignedOut, {\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_clerk_nextjs__WEBPACK_IMPORTED_MODULE_8__.SignInButton, {\n                            forceRedirectUrl: \"/dashboard\",\n                            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_ui_button__WEBPACK_IMPORTED_MODULE_3__.Button, {\n                                variant: \"outline\",\n                                children: \"Login\"\n                            }, void 0, false, {\n                                fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n                                lineNumber: 27,\n                                columnNumber: 21\n                            }, undefined)\n                        }, void 0, false, {\n                            fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n                            lineNumber: 26,\n                            columnNumber: 17\n                        }, undefined)\n                    }, void 0, false, {\n                        fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n                        lineNumber: 25,\n                        columnNumber: 13\n                    }, undefined),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_clerk_nextjs__WEBPACK_IMPORTED_MODULE_7__.SignedIn, {\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_user_menu__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {}, void 0, false, {\n                            fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n                            lineNumber: 31,\n                            columnNumber: 17\n                        }, undefined)\n                    }, void 0, false, {\n                        fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n                        lineNumber: 30,\n                        columnNumber: 13\n                    }, undefined)\n                ]\n            }, void 0, true, {\n                fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n                lineNumber: 23,\n                columnNumber: 9\n            }, undefined)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/hluo/Documents/GitHub/hedgesched/components/header.jsx\",\n        lineNumber: 13,\n        columnNumber: 13\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9jb21wb25lbnRzL2hlYWRlci5qc3giLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7OztBQUE2QjtBQUNFO0FBQ007QUFDQztBQUN3QztBQUMzQztBQUNTO0FBRTVDLE1BQU1VLFNBQVM7SUFFWCxNQUFNRCx5REFBU0E7SUFFZixxQkFBUSw4REFBQ0U7UUFBSUMsV0FBVTs7MEJBQ25CLDhEQUFDWixrREFBSUE7Z0JBQUNhLE1BQU07Z0JBQUtELFdBQVc7MEJBQzVCLDRFQUFDWCxrREFBS0E7b0JBQ0ZhLEtBQU07b0JBQ05DLE9BQVE7b0JBQ1JDLFFBQVM7b0JBQ1RDLEtBQU07b0JBQ05MLFdBQVk7Ozs7Ozs7Ozs7OzBCQUdoQiw4REFBQ007Z0JBQUlOLFdBQVk7O2tDQUNiLDhEQUFDWixrREFBSUE7d0JBQUNhLE1BQU87a0NBQXNCLDRFQUFDWCw4Q0FBTUE7NEJBQUNVLFdBQVU7OzhDQUEwQiw4REFBQ1Qsa0ZBQU1BO29DQUFDZ0IsTUFBTTs7Ozs7O2dDQUFLOzs7Ozs7Ozs7Ozs7a0NBQ2xHLDhEQUFDZCxvREFBU0E7a0NBQ04sNEVBQUNDLHVEQUFZQTs0QkFBQ2Msa0JBQWlCO3NDQUMzQiw0RUFBQ2xCLDhDQUFNQTtnQ0FBQ21CLFNBQVE7MENBQVU7Ozs7Ozs7Ozs7Ozs7Ozs7a0NBR2xDLDhEQUFDakIsbURBQVFBO2tDQUNMLDRFQUFDSSxrREFBUUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFJekI7QUFFQSxpRUFBZUUsTUFBTUEsRUFBQSIsInNvdXJjZXMiOlsiL1VzZXJzL2hsdW8vRG9jdW1lbnRzL0dpdEh1Yi9oZWRnZXNjaGVkL2NvbXBvbmVudHMvaGVhZGVyLmpzeCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTGluayBmcm9tIFwibmV4dC9saW5rXCI7XG5pbXBvcnQgSW1hZ2UgZnJvbSBcIm5leHQvaW1hZ2VcIjtcbmltcG9ydCB7IEJ1dHRvbiB9IGZyb20gXCIuL3VpL2J1dHRvblwiO1xuaW1wb3J0IHsgUGVuQm94IH0gZnJvbSBcImx1Y2lkZS1yZWFjdFwiO1xuaW1wb3J0IHsgU2lnbmVkSW4sIFNpZ25lZE91dCwgU2lnbkluQnV0dG9uLCBVc2VyQnV0dG9uIH0gZnJvbSBcIkBjbGVyay9uZXh0anNcIjtcbmltcG9ydCBVc2VyTWVudSBmcm9tIFwiLi91c2VyLW1lbnVcIjtcbmltcG9ydCB7IGNoZWNrVXNlciB9IGZyb20gXCJAL2xpYi9jaGVja1VzZXJcIjtcbiBcbmNvbnN0IEhlYWRlciA9IGFzeW5jICgpID0+IHtcblxuICAgIGF3YWl0IGNoZWNrVXNlcigpO1xuXG4gICAgcmV0dXJuICg8bmF2IGNsYXNzTmFtZT1cIm14LWF1dG8gcHktMiBweC00IGZsZXgganVzdGlmeS1iZXR3ZWVuIGl0ZW1zLWNlbnRlciBzaGFkb3ctbWQgYm9yZGVyLWItMlwiPlxuICAgICAgICA8TGluayBocmVmPXtcIi9cIn0gY2xhc3NOYW1lPSBcImZsZXggaXRlbXMtY2VudGVyXCI+XG4gICAgICAgIDxJbWFnZSBcbiAgICAgICAgICAgIHNyYyA9IFwiL2xvZ28ucG5nXCIgXG4gICAgICAgICAgICB3aWR0aCA9IFwiMTYwXCIgXG4gICAgICAgICAgICBoZWlnaHQgPSBcIjcwXCIgXG4gICAgICAgICAgICBhbHQgPSBcIkhFREdFIExvZ29cIlxuICAgICAgICAgICAgY2xhc3NOYW1lID0gXCJoLTE4IHctYXV0b1wiXG4gICAgICAgIC8+XG4gICAgPC9MaW5rPiBcbiAgICAgICAgPGRpdiBjbGFzc05hbWUgPSBcImZsZXggaXRlbXMtY2VudGVyIGdhcC00XCI+IFxuICAgICAgICAgICAgPExpbmsgaHJlZiA9ICcvZXZlbnRzP2NyZWF0ZT10cnVlJz48QnV0dG9uIGNsYXNzTmFtZT1cImZsZXggaXRlbXMtY2VudGVyIGdhcC0yXCI+PFBlbkJveCBzaXplPXsxOH0vPkNyZWF0ZSBFdmVudDwvQnV0dG9uPjwvTGluaz5cbiAgICAgICAgICAgIDxTaWduZWRPdXQ+IFxuICAgICAgICAgICAgICAgIDxTaWduSW5CdXR0b24gZm9yY2VSZWRpcmVjdFVybD1cIi9kYXNoYm9hcmRcIj5cbiAgICAgICAgICAgICAgICAgICAgPEJ1dHRvbiB2YXJpYW50PVwib3V0bGluZVwiPkxvZ2luPC9CdXR0b24+XG4gICAgICAgICAgICAgICAgPC9TaWduSW5CdXR0b24+XG4gICAgICAgICAgICA8L1NpZ25lZE91dD5cbiAgICAgICAgICAgIDxTaWduZWRJbj5cbiAgICAgICAgICAgICAgICA8VXNlck1lbnUvPlxuICAgICAgICAgICAgPC9TaWduZWRJbj5cbiAgICAgICAgPC9kaXY+XG4gICAgPC9uYXY+KTtcbn1cblxuZXhwb3J0IGRlZmF1bHQgSGVhZGVyIl0sIm5hbWVzIjpbIkxpbmsiLCJJbWFnZSIsIkJ1dHRvbiIsIlBlbkJveCIsIlNpZ25lZEluIiwiU2lnbmVkT3V0IiwiU2lnbkluQnV0dG9uIiwiVXNlckJ1dHRvbiIsIlVzZXJNZW51IiwiY2hlY2tVc2VyIiwiSGVhZGVyIiwibmF2IiwiY2xhc3NOYW1lIiwiaHJlZiIsInNyYyIsIndpZHRoIiwiaGVpZ2h0IiwiYWx0IiwiZGl2Iiwic2l6ZSIsImZvcmNlUmVkaXJlY3RVcmwiLCJ2YXJpYW50Il0sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(rsc)/./components/header.jsx\n");
 
 /***/ }),
 
@@ -109,6 +109,28 @@ function() { throw new Error("Attempted to call the default export of \"/Users/h
 "default",
 ));
 
+
+/***/ }),
+
+/***/ "(rsc)/./lib/checkUser.js":
+/*!**************************!*\
+  !*** ./lib/checkUser.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   checkUser: () => (/* binding */ checkUser)\n/* harmony export */ });\n/* harmony import */ var _clerk_clerk_sdk_node__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @clerk/clerk-sdk-node */ \"(rsc)/./node_modules/@clerk/clerk-sdk-node/dist/esm/index.mjs\");\n/* harmony import */ var _clerk_nextjs_server__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @clerk/nextjs/server */ \"(rsc)/./node_modules/@clerk/nextjs/dist/esm/app-router/server/currentUser.js\");\n/* harmony import */ var _prisma__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./prisma */ \"(rsc)/./lib/prisma.js\");\n//import { clerkClient, currentUser } from \"@clerk/nextjs/server\";\n\n\n\nconst checkUser = async ()=>{\n    const user = await (0,_clerk_nextjs_server__WEBPACK_IMPORTED_MODULE_2__.currentUser)();\n    /* Added from DeepSeek */ console.log('[DEBUG] clerkClient:', _clerk_clerk_sdk_node__WEBPACK_IMPORTED_MODULE_0__.clerkClient);\n    console.log('[DEBUG] clerkClient.users:', _clerk_clerk_sdk_node__WEBPACK_IMPORTED_MODULE_0__.clerkClient.users);\n    if (!user) {\n        return null;\n    }\n    try {\n        const loggedInUser = await _prisma__WEBPACK_IMPORTED_MODULE_1__.db?.user.findUnique({\n            where: {\n                clerkUserId: user.id\n            }\n        });\n        if (loggedInUser) {\n            return loggedInUser;\n        }\n        const name = `${user.firstName} ${user.lastName}`;\n        await _clerk_clerk_sdk_node__WEBPACK_IMPORTED_MODULE_0__.clerkClient.users.updateUser(user.id, {\n            username: name.split(\" \").join(\"-\") + user.id.slice(-4)\n        });\n        const newUser = await _prisma__WEBPACK_IMPORTED_MODULE_1__.db.user.create({\n            data: {\n                clerkUserId: user.id,\n                name,\n                imageUrl: user.imageUrl,\n                email: user.emailAddresses[0].emailAddress,\n                username: name.split(\" \").join(\"-\") + user.id.slice(-4)\n            }\n        });\n        return newUser;\n    } catch (error) {\n        console.error(error);\n    }\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9saWIvY2hlY2tVc2VyLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7QUFBQSxrRUFBa0U7QUFDZDtBQUNEO0FBQ3JCO0FBRXZCLE1BQU1HLFlBQVk7SUFDckIsTUFBTUMsT0FBTyxNQUFNSCxpRUFBV0E7SUFFOUIsdUJBQXVCLEdBQ3ZCSSxRQUFRQyxHQUFHLENBQUMsd0JBQXdCTiw4REFBV0E7SUFDL0NLLFFBQVFDLEdBQUcsQ0FBQyw4QkFBOEJOLDhEQUFXQSxDQUFDTyxLQUFLO0lBRS9ELElBQUksQ0FBQ0gsTUFBTTtRQUNQLE9BQU87SUFDWDtJQUVBLElBQUk7UUFDRCxNQUFNSSxlQUFlLE1BQU1OLHVDQUFFQSxFQUFFRSxLQUFLSyxXQUFXO1lBQzlDQyxPQUFNO2dCQUNGQyxhQUFhUCxLQUFLUSxFQUFFO1lBQ3hCO1FBQ0Q7UUFFQSxJQUFJSixjQUFjO1lBQ2pCLE9BQU9BO1FBQ1I7UUFFQSxNQUFNSyxPQUFPLEdBQUdULEtBQUtVLFNBQVMsQ0FBQyxDQUFDLEVBQUVWLEtBQUtXLFFBQVEsRUFBRTtRQUVqRCxNQUFNZiw4REFBV0EsQ0FBQ08sS0FBSyxDQUFDUyxVQUFVLENBQUNaLEtBQUtRLEVBQUUsRUFBRTtZQUN2Q0ssVUFBVUosS0FBS0ssS0FBSyxDQUFDLEtBQUtDLElBQUksQ0FBQyxPQUFLZixLQUFLUSxFQUFFLENBQUNRLEtBQUssQ0FBQyxDQUFDO1FBQ3hEO1FBRUMsTUFBTUMsVUFBVSxNQUFNbkIsdUNBQUVBLENBQUNFLElBQUksQ0FBQ2tCLE1BQU0sQ0FBQztZQUNqQ0MsTUFBTTtnQkFDRlosYUFBYVAsS0FBS1EsRUFBRTtnQkFDcEJDO2dCQUNBVyxVQUFVcEIsS0FBS29CLFFBQVE7Z0JBQ3ZCQyxPQUFPckIsS0FBS3NCLGNBQWMsQ0FBQyxFQUFFLENBQUNDLFlBQVk7Z0JBQzFDVixVQUFVSixLQUFLSyxLQUFLLENBQUMsS0FBS0MsSUFBSSxDQUFDLE9BQUtmLEtBQUtRLEVBQUUsQ0FBQ1EsS0FBSyxDQUFDLENBQUM7WUFDdkQ7UUFDSjtRQUVBLE9BQU9DO0lBQ1gsRUFBRSxPQUFPTyxPQUFPO1FBQ1p2QixRQUFRdUIsS0FBSyxDQUFDQTtJQUNsQjtBQUNBLEVBQUUiLCJzb3VyY2VzIjpbIi9Vc2Vycy9obHVvL0RvY3VtZW50cy9HaXRIdWIvaGVkZ2VzY2hlZC9saWIvY2hlY2tVc2VyLmpzIl0sInNvdXJjZXNDb250ZW50IjpbIi8vaW1wb3J0IHsgY2xlcmtDbGllbnQsIGN1cnJlbnRVc2VyIH0gZnJvbSBcIkBjbGVyay9uZXh0anMvc2VydmVyXCI7XG5pbXBvcnQgeyBjbGVya0NsaWVudCB9IGZyb20gXCJAY2xlcmsvY2xlcmstc2RrLW5vZGVcIjtcbmltcG9ydCB7IGN1cnJlbnRVc2VyIH0gZnJvbSBcIkBjbGVyay9uZXh0anMvc2VydmVyXCI7XG5pbXBvcnQgeyBkYiB9IGZyb20gXCIuL3ByaXNtYVwiO1xuXG5leHBvcnQgY29uc3QgY2hlY2tVc2VyID0gYXN5bmMgKCkgPT4ge1xuICAgIGNvbnN0IHVzZXIgPSBhd2FpdCBjdXJyZW50VXNlcigpO1xuXG4gICAgLyogQWRkZWQgZnJvbSBEZWVwU2VlayAqL1xuICAgIGNvbnNvbGUubG9nKCdbREVCVUddIGNsZXJrQ2xpZW50OicsIGNsZXJrQ2xpZW50KTtcbiAgICBjb25zb2xlLmxvZygnW0RFQlVHXSBjbGVya0NsaWVudC51c2VyczonLCBjbGVya0NsaWVudC51c2Vycyk7IFxuXG5pZiAoIXVzZXIpIHtcbiAgICByZXR1cm4gbnVsbDtcbn1cblxudHJ5IHtcbiAgIGNvbnN0IGxvZ2dlZEluVXNlciA9IGF3YWl0IGRiPy51c2VyLmZpbmRVbmlxdWUoe1xuICAgIHdoZXJlOntcbiAgICAgICAgY2xlcmtVc2VySWQ6IHVzZXIuaWQsXG4gICAgfSxcbiAgIH0pO1xuXG4gICBpZiAobG9nZ2VkSW5Vc2VyKSB7XG4gICAgcmV0dXJuIGxvZ2dlZEluVXNlcjtcbiAgIH1cblxuICAgY29uc3QgbmFtZSA9IGAke3VzZXIuZmlyc3ROYW1lfSAke3VzZXIubGFzdE5hbWV9YDtcblxuICAgYXdhaXQgY2xlcmtDbGllbnQudXNlcnMudXBkYXRlVXNlcih1c2VyLmlkLCB7XG4gICAgICAgIHVzZXJuYW1lOiBuYW1lLnNwbGl0KFwiIFwiKS5qb2luKFwiLVwiKSt1c2VyLmlkLnNsaWNlKC00KSxcbiAgIH0pO1xuXG4gICAgY29uc3QgbmV3VXNlciA9IGF3YWl0IGRiLnVzZXIuY3JlYXRlKHtcbiAgICAgICAgZGF0YToge1xuICAgICAgICAgICAgY2xlcmtVc2VySWQ6IHVzZXIuaWQsXG4gICAgICAgICAgICBuYW1lLCBcbiAgICAgICAgICAgIGltYWdlVXJsOiB1c2VyLmltYWdlVXJsLFxuICAgICAgICAgICAgZW1haWw6IHVzZXIuZW1haWxBZGRyZXNzZXNbMF0uZW1haWxBZGRyZXNzLFxuICAgICAgICAgICAgdXNlcm5hbWU6IG5hbWUuc3BsaXQoXCIgXCIpLmpvaW4oXCItXCIpK3VzZXIuaWQuc2xpY2UoLTQpLFxuICAgICAgICB9LFxuICAgIH0pO1xuXG4gICAgcmV0dXJuIG5ld1VzZXI7XG59IGNhdGNoIChlcnJvcikgeyAgIFxuICAgIGNvbnNvbGUuZXJyb3IoZXJyb3IpO1xufVxufTsiXSwibmFtZXMiOlsiY2xlcmtDbGllbnQiLCJjdXJyZW50VXNlciIsImRiIiwiY2hlY2tVc2VyIiwidXNlciIsImNvbnNvbGUiLCJsb2ciLCJ1c2VycyIsImxvZ2dlZEluVXNlciIsImZpbmRVbmlxdWUiLCJ3aGVyZSIsImNsZXJrVXNlcklkIiwiaWQiLCJuYW1lIiwiZmlyc3ROYW1lIiwibGFzdE5hbWUiLCJ1cGRhdGVVc2VyIiwidXNlcm5hbWUiLCJzcGxpdCIsImpvaW4iLCJzbGljZSIsIm5ld1VzZXIiLCJjcmVhdGUiLCJkYXRhIiwiaW1hZ2VVcmwiLCJlbWFpbCIsImVtYWlsQWRkcmVzc2VzIiwiZW1haWxBZGRyZXNzIiwiZXJyb3IiXSwiaWdub3JlTGlzdCI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(rsc)/./lib/checkUser.js\n");
+
+/***/ }),
+
+/***/ "(rsc)/./lib/prisma.js":
+/*!***********************!*\
+  !*** ./lib/prisma.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   db: () => (/* binding */ db)\n/* harmony export */ });\n/* harmony import */ var _prisma_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @prisma/client */ \"@prisma/client\");\n/* harmony import */ var _prisma_client__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_prisma_client__WEBPACK_IMPORTED_MODULE_0__);\n\nconst db = globalThis.prisma || new _prisma_client__WEBPACK_IMPORTED_MODULE_0__.PrismaClient();\nif (true) {\n    globalThis.prisma = db;\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9saWIvcHJpc21hLmpzIiwibWFwcGluZ3MiOiI7Ozs7OztBQUE4QztBQUV2QyxNQUFNQyxLQUFLQyxXQUFXQyxNQUFNLElBQUksSUFBSUgsd0RBQVlBLEdBQUc7QUFFMUQsSUFBSUksSUFBcUMsRUFBRTtJQUN2Q0YsV0FBV0MsTUFBTSxHQUFHRjtBQUN4QiIsInNvdXJjZXMiOlsiL1VzZXJzL2hsdW8vRG9jdW1lbnRzL0dpdEh1Yi9oZWRnZXNjaGVkL2xpYi9wcmlzbWEuanMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgUHJpc21hQ2xpZW50IH0gZnJvbSBcIkBwcmlzbWEvY2xpZW50XCI7XG5cbmV4cG9ydCBjb25zdCBkYiA9IGdsb2JhbFRoaXMucHJpc21hIHx8IG5ldyBQcmlzbWFDbGllbnQoKTtcblxuaWYgKHByb2Nlc3MuZW52Lk5PREVfRU5WICE9PSBcInByb2R1Y3Rpb25cIikge1xuICAgIGdsb2JhbFRoaXMucHJpc21hID0gZGI7XG59Il0sIm5hbWVzIjpbIlByaXNtYUNsaWVudCIsImRiIiwiZ2xvYmFsVGhpcyIsInByaXNtYSIsInByb2Nlc3MiXSwiaWdub3JlTGlzdCI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(rsc)/./lib/prisma.js\n");
 
 /***/ }),
 
@@ -271,6 +293,39 @@ module.exports = require("next/dist/server/app-render/work-unit-async-storage.ex
 
 /***/ }),
 
+/***/ "@prisma/client":
+/*!*********************************!*\
+  !*** external "@prisma/client" ***!
+  \*********************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@prisma/client");
+
+/***/ }),
+
+/***/ "buffer":
+/*!*************************!*\
+  !*** external "buffer" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("buffer");
+
+/***/ }),
+
+/***/ "crypto":
+/*!*************************!*\
+  !*** external "crypto" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("crypto");
+
+/***/ }),
+
 /***/ "next/dist/compiled/next-server/app-page.runtime.dev.js":
 /*!*************************************************************************!*\
   !*** external "next/dist/compiled/next-server/app-page.runtime.dev.js" ***!
@@ -279,6 +334,28 @@ module.exports = require("next/dist/server/app-render/work-unit-async-storage.ex
 
 "use strict";
 module.exports = require("next/dist/compiled/next-server/app-page.runtime.dev.js");
+
+/***/ }),
+
+/***/ "node:async_hooks":
+/*!***********************************!*\
+  !*** external "node:async_hooks" ***!
+  \***********************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:async_hooks");
+
+/***/ }),
+
+/***/ "node:buffer":
+/*!******************************!*\
+  !*** external "node:buffer" ***!
+  \******************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:buffer");
 
 /***/ }),
 
@@ -304,6 +381,39 @@ module.exports = require("node:fs");
 
 /***/ }),
 
+/***/ "node:http":
+/*!****************************!*\
+  !*** external "node:http" ***!
+  \****************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:http");
+
+/***/ }),
+
+/***/ "node:https":
+/*!*****************************!*\
+  !*** external "node:https" ***!
+  \*****************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:https");
+
+/***/ }),
+
+/***/ "node:net":
+/*!***************************!*\
+  !*** external "node:net" ***!
+  \***************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:net");
+
+/***/ }),
+
 /***/ "node:path":
 /*!****************************!*\
   !*** external "node:path" ***!
@@ -312,6 +422,72 @@ module.exports = require("node:fs");
 
 "use strict";
 module.exports = require("node:path");
+
+/***/ }),
+
+/***/ "node:process":
+/*!*******************************!*\
+  !*** external "node:process" ***!
+  \*******************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:process");
+
+/***/ }),
+
+/***/ "node:stream":
+/*!******************************!*\
+  !*** external "node:stream" ***!
+  \******************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:stream");
+
+/***/ }),
+
+/***/ "node:stream/web":
+/*!**********************************!*\
+  !*** external "node:stream/web" ***!
+  \**********************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:stream/web");
+
+/***/ }),
+
+/***/ "node:url":
+/*!***************************!*\
+  !*** external "node:url" ***!
+  \***************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:url");
+
+/***/ }),
+
+/***/ "node:util":
+/*!****************************!*\
+  !*** external "node:util" ***!
+  \****************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:util");
+
+/***/ }),
+
+/***/ "node:zlib":
+/*!****************************!*\
+  !*** external "node:zlib" ***!
+  \****************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:zlib");
 
 /***/ }),
 
@@ -326,6 +502,17 @@ module.exports = require("path");
 
 /***/ }),
 
+/***/ "process":
+/*!**************************!*\
+  !*** external "process" ***!
+  \**************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("process");
+
+/***/ }),
+
 /***/ "url":
 /*!**********************!*\
   !*** external "url" ***!
@@ -334,6 +521,17 @@ module.exports = require("path");
 
 "use strict";
 module.exports = require("url");
+
+/***/ }),
+
+/***/ "worker_threads":
+/*!*********************************!*\
+  !*** external "worker_threads" ***!
+  \*********************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("worker_threads");
 
 /***/ })
 
@@ -344,7 +542,7 @@ module.exports = require("url");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/@clerk","vendor-chunks/next","vendor-chunks/lucide-react","vendor-chunks/swr","vendor-chunks/@swc","vendor-chunks/@radix-ui","vendor-chunks/dequal","vendor-chunks/use-sync-external-store","vendor-chunks/tslib","vendor-chunks/tailwind-merge","vendor-chunks/clsx","vendor-chunks/class-variance-authority","vendor-chunks/snakecase-keys","vendor-chunks/snake-case","vendor-chunks/no-case","vendor-chunks/map-obj","vendor-chunks/lower-case","vendor-chunks/dot-case","vendor-chunks/cookie"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fpage&page=%2Fpage&appPaths=%2Fpage&pagePath=private-next-app-dir%2Fpage.js&appDir=%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/@clerk","vendor-chunks/next","vendor-chunks/@swc","vendor-chunks/node-fetch-native","vendor-chunks/@peculiar","vendor-chunks/asn1js","vendor-chunks/tailwind-merge","vendor-chunks/swr","vendor-chunks/webcrypto-core","vendor-chunks/tslib","vendor-chunks/lucide-react","vendor-chunks/pvtsutils","vendor-chunks/pvutils","vendor-chunks/cookie","vendor-chunks/@radix-ui","vendor-chunks/deepmerge","vendor-chunks/use-sync-external-store","vendor-chunks/class-variance-authority","vendor-chunks/dequal","vendor-chunks/map-obj","vendor-chunks/no-case","vendor-chunks/lower-case","vendor-chunks/snakecase-keys","vendor-chunks/clsx","vendor-chunks/snake-case","vendor-chunks/dot-case"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fpage&page=%2Fpage&appPaths=%2Fpage&pagePath=private-next-app-dir%2Fpage.js&appDir=%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
 module.exports = __webpack_exports__;
 
 })();
