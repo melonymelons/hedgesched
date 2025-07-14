@@ -18,14 +18,15 @@ const AppLayout = ({children}) => {
     return (
         <>
         {!isLoaded && <BarLoader width={"100%"} color = "#36d7b7" />}
-        <div>
-            <aside> 
-                <nav>
+        <div className = "flex flex-col h-screen bg-red-50 md:flex-row">
+            <aside className = "hidden md:block w-64 bg-white"> 
+                <nav className = "mt-8">
                     <ul>
                         {navItems.map((item) => (
                             <li key = {item.href} >
                                  <Link href = {item.href} className = "flex items-center px-4 py-4 text-gray-700 hover:bg-gray-100"
                               > 
+                                <item.icon className = "w-5 h-5 mr-3" /> 
                                 {item.label} 
                             </Link>
                             </li>
