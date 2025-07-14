@@ -7,6 +7,8 @@ import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from "@hookform/resolvers/zod";
 import { usernameSchema } from '@/app/lib/validators';
+import useFetch from '@/hooks/use-fetch';
+import { updateUsername } from '@/actions/users';
 
 const Dashboard = () => {
 
@@ -26,7 +28,16 @@ const Dashboard = () => {
         setValue("username", user?.username);
     }, [isLoaded]);
 
-    const onSubmit = async (data) => {};
+
+    const {
+        loading, 
+        error, 
+        fn: fnUpdateUsername,
+    } = useFetch(updateUsername);
+
+    const onSubmit = async (data) => {
+        fnUpdateUsername(data.username);
+    };
 
     return (
         <div className = "space-y-8">
@@ -60,7 +71,11 @@ const Dashboard = () => {
                                     {errors.username.message}
                                 </p>
                             )}
+                            {error && (
+                                <p className = "text-red-500 text-sm mt-1">{error?.message}</p>
+                            )}
                         </div>
+                        {loading && <BarLoader className = "mb-4" width = {"100%"} color = "#36d7b7"/>}
                         <Button type = "submit">
                             更新用户名
                         </Button>

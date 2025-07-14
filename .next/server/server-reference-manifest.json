@@ -70,7 +70,7 @@
           "async": false
         },
         "app/(main)/dashboard/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%5D&__client_imported__=true!",
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fusers.js%22%2C%5B%7B%22id%22%3A%22406701e9474fafdc14eb8bf61313764d652933bc9c%22%2C%22exportedName%22%3A%22updateUsername%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
         },
         "app/_not-found/page": {
@@ -82,6 +82,17 @@
         "app/page": "action-browser",
         "app/(main)/dashboard/page": "action-browser",
         "app/_not-found/page": "action-browser"
+      }
+    },
+    "406701e9474fafdc14eb8bf61313764d652933bc9c": {
+      "workers": {
+        "app/(main)/dashboard/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fusers.js%22%2C%5B%7B%22id%22%3A%22406701e9474fafdc14eb8bf61313764d652933bc9c%22%2C%22exportedName%22%3A%22updateUsername%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/(main)/dashboard/page": "action-browser"
       }
     }
   },
