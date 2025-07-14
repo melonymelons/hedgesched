@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
           <p>Hedge Global ~ Scheduling Platform</p>
         </div>
       </footer>
+      {/* <CreateEventDrawer /> */}
       </body>
     </html>
     </ClerkProvider>

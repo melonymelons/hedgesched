@@ -3,12 +3,13 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { useUser } from '@clerk/nextjs';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from "@hookform/resolvers/zod";
 import { usernameSchema } from '@/app/lib/validators';
 import useFetch from '@/hooks/use-fetch';
 import { updateUsername } from '@/actions/users';
+import { BarLoader } from 'react-spinners';
 
 const Dashboard = () => {
 
@@ -47,9 +48,8 @@ const Dashboard = () => {
                         欢迎, {user?.firstName}
                     </CardTitle>
                 </CardHeader>
-               {/*  Latest Updates */}
+              { /* Latest Updates */ }
             </Card>
-
             <Card>
                 <CardHeader>
                     <CardTitle>
@@ -61,9 +61,9 @@ const Dashboard = () => {
                         <div>
                             <div className = "flex items-center gap-2">
                                 <span>
-                                    {window?.location.origin}/
+                                    http://localhost:3000/ (need to change)
                                 </span>
-                                <Input {...register("username")} placeholder = "用户名"/>
+                                <Input {...register("username")} placeholder = "用户名" readOnly/>
                             </div>
 
                             {errors.username && (
@@ -75,10 +75,6 @@ const Dashboard = () => {
                                 <p className = "text-red-500 text-sm mt-1">{error?.message}</p>
                             )}
                         </div>
-                        {loading && <BarLoader className = "mb-4" width = {"100%"} color = "#36d7b7"/>}
-                        <Button type = "submit">
-                            更新用户名
-                        </Button>
                     </form>
                 </CardContent>
             </Card>
@@ -87,3 +83,11 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+
+/*
+<Button type = "submit">
+     更新用户名
+</Button>
+
+{loading && <BarLoader className = "mb-4" width = {"100%"} color = "#36d7b7"/>}
+*/
