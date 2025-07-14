@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { useUser } from '@clerk/nextjs';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from "@hookform/resolvers/zod";
 import { usernameSchema } from '@/app/lib/validators';
@@ -13,12 +13,21 @@ const Dashboard = () => {
     const {isLoaded, user} = useUser();
     console.log(user);
 
-    const {register, handleSubmit} = useForm({
+    const {
+        register, 
+        handleSubmit, 
+        setValue, 
+        formState:{errors},
+    } = useForm({
         resolver: zodResolver (usernameSchema),
-    })
+    });
+
+    useEffect(() => {
+        setValue("username", user?.username);
+    }, [isLoaded]);
 
     const onSubmit = async (data) => {};
-    
+
     return (
         <div className = "space-y-8">
             <Card>
@@ -45,6 +54,12 @@ const Dashboard = () => {
                                 </span>
                                 <Input {...register("username")} placeholder = "用户名"/>
                             </div>
+
+                            {errors.username && (
+                                <p className = "text-red-500 text-sm mt-1">
+                                    {errors.username.message}
+                                </p>
+                            )}
                         </div>
                         <Button type = "submit">
                             更新用户名
