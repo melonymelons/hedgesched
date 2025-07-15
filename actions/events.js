@@ -9,7 +9,7 @@ export async function createEvent(data){
     if(!userId) {
         throw new Error("Unauthorized");
     }
-
+ 
     const validatedData = eventSchema.parse(data);
 
     const user = await db.user.findUnique({

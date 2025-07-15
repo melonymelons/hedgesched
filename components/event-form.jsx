@@ -11,7 +11,7 @@ import { useRouter } from "next/navigation";
 
 const EventForm = ({onSubmitForm}) => {
     const router = useRouter();
-   
+    
     const {register, handleSubmit, control, formState: {errors},} = useForm({
         resolver: zodResolver(eventSchema),
         defaultValues:{
