@@ -6,6 +6,7 @@ import { Button } from './ui/button';
 import { Link, Trash2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { deleteEvent } from '@/actions/events';
+import useFetch from '@/hooks/use-fetch';
 
 const EventCard = ({event, username, isPublic = false}) => {
 
