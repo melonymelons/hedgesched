@@ -13,9 +13,11 @@ const EventCard = ({event, username, isPublic = false}) => {
 
     const handleCopy = async() => {
         try {
-            await navigator.clipboard.write
+            await navigator.clipboard.writeText(`${window.location.origin}/${username}/${event.id}`);
+            setIsCopied(true);
+            setTimeout(() => setIsCopied(false), 2000);
         } catch (error) {
-
+            console.error("Failed to copy: ", err);
         }
     };
 
@@ -38,7 +40,8 @@ const EventCard = ({event, username, isPublic = false}) => {
        {!isPublic && ( 
         <CardFooter className = "flex gap-2">
           <Button variant = "outline" className = "flex items-center" onClick = {handleCopy}>
-            <Link className = "mr-2 h-4 w-4" /> 复制链接
+            <Link className = "mr-2 h-4 w-4" /> {" "}
+            {isCopied ? "已复制!" : " 复制链接"} 
              </Button>
           <Button variant = "destructive">
             <Trash2 className = "mr-2 h-4 w-4" />
