@@ -7,7 +7,7 @@ import { auth } from "@clerk/nextjs/server";
 export async function createEvent(data){
     const {userId} = auth();
     if(!userId) {
-        throw new Error("Unauthorized");
+        throw new Error("未经授权");
     }
  
     const validatedData = eventSchema.parse(data);
@@ -17,7 +17,7 @@ export async function createEvent(data){
     });
 
     if(!user) {
-        throw new Error("User not found");
+        throw new Error("未找到用户");
     }
 
     const event = await db.event.create({
@@ -28,4 +28,31 @@ export async function createEvent(data){
     });
 
     return event;
+}
+
+export async function getUserEvents() {
+    const {userId} = auth();
+    if(!userId) {
+        throw new Error("未经授权");
+    }
+ 
+    const user = await db.user.findUnique({
+        where:{ clerkUserId:userId },
+    });
+
+    if(!user) {
+        throw new Error("未找到用户");
+    }
+
+    const event = await db.event.findMany({
+       where: {userId: user.id}, 
+       orderBy: {createdAt: "desc"},
+       include: {
+        _count: {
+            select: {booking: true},
+        },
+       },
+    });
+
+    return {events, username: user.username};
 }
