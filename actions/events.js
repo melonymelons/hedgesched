@@ -58,5 +58,35 @@ export async function getUserEvents() {
     return {events, username: user.username};
 }
 
+export async function deleteEvent(eventId) {
+    const {userId} = await auth();
+ 
+     if(!userId) {
+         throw new Error("未经授权");
+     }
+  
+     const user = await db.user.findUnique({
+         where:{ clerkUserId: userId },
+     });
+ 
+     if(!user) {
+         throw new Error("未找到用户");
+     }
+ 
+     const event = await db.event.findUnique({
+       where:{id: eventId },
+     });
+ 
+     if(!event || event.userId !== user.id) {
+        throw new Error("Event not found or unauthorized");
+     }
+
+     await db.event.delete({
+        where:{id: eventId },
+     });
+
+     return {success: true};
+ }
+
 //main issue that i fixed: doing const {userId} = await auth(); <-- adding the await call instead of just auth(); 
 //another issue was that i misnamed the "const events" into "const event" in line 48

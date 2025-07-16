@@ -5,6 +5,7 @@ import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader,
 import { Button } from './ui/button';
 import { Link, Trash2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
+import { deleteEvent } from '@/actions/events';
 
 const EventCard = ({event, username, isPublic = false}) => {
 
@@ -18,6 +19,15 @@ const EventCard = ({event, username, isPublic = false}) => {
             setTimeout(() => setIsCopied(false), 2000);
         } catch (error) {
             console.error("Failed to copy: ", err);
+        }
+    };
+
+    const {loading, fn: fnDeleteEvent} = useFetch(deleteEvent);
+
+    const handleDelete = async() => {
+        if (window?.confirm("您确定要删除此活动吗?")){
+            await fnDeleteEvent(event.id);
+            router.refresh();
         }
     };
 
@@ -43,9 +53,9 @@ const EventCard = ({event, username, isPublic = false}) => {
             <Link className = "mr-2 h-4 w-4" /> {" "}
             {isCopied ? "已复制!" : " 复制链接"} 
              </Button>
-          <Button variant = "destructive">
+          <Button variant = "destructive" onClick = {handleDelete} disabled = {loading}>
             <Trash2 className = "mr-2 h-4 w-4" />
-            删除
+            {loading ? "正在删除..." : "删除"}
           </Button>
         </CardFooter> 
     )}
