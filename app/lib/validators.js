@@ -23,3 +23,28 @@ export const eventSchema = z.object({
 
     isPrivate: z.boolean(),
 });
+
+export const daySchema = z.object({
+    isAvailable: z.boolean(),
+    startTime: z.string().optional(),
+    endTime: z.string().optional(),
+}).refine((data) => {
+    if(data.isAvailable){
+        return data.startTime<data.endTime;
+    }
+    return true;
+},{
+    message: "结束时间必须早于开始时间",
+    path: ["endTime"],
+});
+
+export const availabilitySchema = z.object({
+    monday: daySchema,
+    tuesday: daySchema,
+    wednesday: daySchema,
+    thursday: daySchema,
+    friday: daySchema,
+    saturday: daySchema,
+    sunday: daySchema,
+    timeGap: z.number().min(0, "时间间隔必须为 0 分钟或以上").int(),
+});
