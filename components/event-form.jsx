@@ -95,7 +95,7 @@ const EventForm = ({onSubmitForm}) => {
                     </SelectTrigger>
                     <SelectContent>
                         <SelectItem value="true">私人的</SelectItem> 
-                        <SelectItem value="false">民众</SelectItem>
+                        <SelectItem value="false">公共</SelectItem>
                     </SelectContent>
                     </Select>
                 )}

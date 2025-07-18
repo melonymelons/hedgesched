@@ -38,7 +38,7 @@ const EventCard = ({event, username, isPublic = false}) => {
           <CardTitle className = "text-2xl">{event.title}</CardTitle>
           <CardDescription className = "flex justify-between">
             <span>
-            {event.duration} 分钟 | {event.isPrivate?"私人的":"民众"} 
+            {event.duration} 分钟 | {event.isPrivate?"私人的":"公共"} 
             </span>
             <span>
                 {event._count.bookings} Bookings

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/backend": "^2.5.0",
     "@clerk/clerk-sdk-node": "^5.1.6",
     "@clerk/nextjs": "^6.23.3",
     "@hookform/resolvers": "^5.1.1",

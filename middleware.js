@@ -1,6 +1,7 @@
-//import { clerkMiddleware , createRouteMatcher, redirectToSignIn } from '@clerk/nextjs/server';
+
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
-import { redirectToSignIn } from "@clerk/nextjs"; // 👈 must come from here
+import { redirectToSignIn } from "@clerk/nextjs/server"; 
+//import { redirectToSignIn } from "@clerk/nextjs"; 
 
 const isProtectedRoute = createRouteMatcher([
   '/dashboard(.*)', 

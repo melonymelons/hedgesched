@@ -12,9 +12,8 @@ import { updateUsername } from '@/actions/users';
 import { BarLoader } from 'react-spinners';
 
 const Dashboard = () => {
-
-    const {isLoaded, user} = useUser();
-    console.log(user);
+   const {isLoaded, user} = useUser();
+   // console.log(user);
 
     const {
         register, 
@@ -61,9 +60,9 @@ const Dashboard = () => {
                         <div>
                             <div className = "flex items-center gap-2">
                                 <span>
-                                    http://localhost:3000/ (need to change)
+                                   {window?.location.origin}/
                                 </span>
-                                <Input {...register("username")} placeholder = "用户名" readOnly/>
+                                <Input {...register("username")} placeholder = "用户名"/>
                             </div>
 
                             {errors.username && (
@@ -75,6 +74,8 @@ const Dashboard = () => {
                                 <p className = "text-red-500 text-sm mt-1">{error?.message}</p>
                             )}
                         </div>
+                        {loading && (<BarLoader className = "mb-4" width={"100%"} color = "#36d7b7"/>)}
+                        <Button type = "submit">更新用户名</Button>
                     </form>
                 </CardContent>
             </Card>

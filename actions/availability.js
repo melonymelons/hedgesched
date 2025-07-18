@@ -36,7 +36,7 @@ export async function getUserAvailability() {
         "saturday",
         "sunday",
     ].forEach((day) => {
-        const dayAvailability = user.availability.days.find(d => d.days === days.toUpperCase());
+        const dayAvailability = user.availability.days.find(d => d.days === day.toUpperCase());
 
         availabilityData[day] = {
             isAvailable: !!dayAvailability,
@@ -48,4 +48,64 @@ export async function getUserAvailability() {
     });
  
     return availabilityData;
+}
+
+export async function updateAvailability(data) {
+    const {userId} = await auth();
+ 
+    if(!userId) {
+        throw new Error("未经授权");
+    }
+
+    const user = await db.user.findUnique({
+        where:{ clerkUserId: userId },
+        include: {
+            availability : true,
+        },
+    });
+
+    if(!user) {
+        throw new Error("未找到用户");
+    }
+
+    const availabilityData = Object.entries(data).flatMap(([day, {isAvailable, startTime, endTime}]) => {
+        if(isAvailable) {
+            const baseDate = new Date().toISOString().split("T")[0];
+
+            return [
+                {
+                    day: day.toUpperCase(),
+                    startTime: new Date(`${baseDate}T${startTime}:00+08:00`),
+                    endTime: new Date(`${baseDate}T${endTime}:00+08:00`),
+                },
+            ];
+        }
+        return [];
+    }
+);
+    if(user.availability) {
+        await db.availability.update({
+            where:{id:user.availability.id},
+            data: {
+                timeGap: data.timeGap,
+                days: {
+                    deleteMany: {},
+                    create: availabilityData,
+                },
+            },
+        });
+    }
+    else {
+        await db.availability.create({
+            data: {
+                userId: user.id,
+                timeGap: data.timeGap,
+                days: {
+                    create: availabilityData,
+                },
+            },
+        });
+    }
+
+    return {success: true};
 }
