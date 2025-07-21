@@ -24,7 +24,7 @@ const EventDetails = ({event}) => {
             <div className = "flex items-center mb-2">
                 <Clock className = "mr-2" />
                 <span>
-                    {event.duration} 分钟
+                {event.duration} 分钟
                 </span>
             </div>
             <div className = "flex items-center mb-4">
