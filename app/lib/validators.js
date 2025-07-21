@@ -48,3 +48,11 @@ export const availabilitySchema = z.object({
     sunday: daySchema,
     timeGap: z.number().min(0, "时间间隔必须为 0 分钟或以上").int(),
 });
+
+export const bookingSchema = z.object({
+    name: z.string().min(1, "姓名为必填项"),
+    email: z.string().email("电子邮件无效"),
+    date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "日期格式无效"),
+    time: z.string().regex(/^\d{2}:\d{2}$/, "时间格式无效"),
+    additionalInfo: z.string().optional(),
+});

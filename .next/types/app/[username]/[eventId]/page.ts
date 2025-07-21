@@ -1,8 +1,8 @@
-// File: /Users/hluo/Documents/GitHub/hedgesched/app/(main)/events/page.jsx
-import * as entry from '../../../../../app/(main)/events/page.js'
+// File: /Users/hluo/Documents/GitHub/hedgesched/app/[username]/[eventId]/page.jsx
+import * as entry from '../../../../../app/[username]/[eventId]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../../app/(main)/events/page.js')
+type TEntry = typeof import('../../../../../app/[username]/[eventId]/page.js')
 
 type SegmentParams<T extends Object = any> = T extends Record<string, any>
   ? { [K in keyof T]: T[K] extends string ? string | string[] | undefined : never }

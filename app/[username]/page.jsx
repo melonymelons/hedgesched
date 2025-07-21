@@ -4,8 +4,30 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { notFound } from "next/navigation";
 import React from "react";
 
+export async function generateMetadata ({params}) {
+    const resolvedParams = await Promise.resolve(params);
+    const username = resolvedParams?.username;
+    
+    const user = await getUserByUsername(username);
+
+    if(!user) {
+        return {
+            title: "未找到用户",
+
+        };
+    }
+
+    return {
+        title: `${user.name}'s 个人主页 | HEDGEsched`,
+        description: `和${user.name}预约活动. 查看公开活动及时间表.`,
+    };
+}
+
 const UserPage = async ({params}) => {
-    const user = await getUserByUsername(params.username);
+    const resolvedParams = await Promise.resolve(params);
+    const username = resolvedParams?.username;
+
+    const user = await getUserByUsername(username);
 
     if(!user) {
         notFound();
@@ -28,12 +50,12 @@ const UserPage = async ({params}) => {
             {user.events.length === 0 ?(
                 <p className = "text-center text-gray-700">没有可用的公共活动。</p>
             ):(
-                <div>
+                <div className = "grid gap-6 md: grid-cols-2 lg: grid-cols-3">
                     {user.events.map((event)=>{
                         return <EventCard
                             key = {event.id}
                             event = {event}
-                            username = {params.username}
+                            username = {username}
                             isPublic
                         />
                     })}
