@@ -1,5 +1,7 @@
 {
-  "/[username]/[eventId]/page": "app/[username]/[eventId]/page.js",
+  "/page": "app/page.js",
   "/[username]/page": "app/[username]/page.js",
-  "/page": "app/page.js"
+  "/[username]/[eventId]/page": "app/[username]/[eventId]/page.js",
+  "/(main)/dashboard/page": "app/(main)/dashboard/page.js",
+  "/(main)/availability/page": "app/(main)/availability/page.js"
 }

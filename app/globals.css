@@ -11,6 +11,15 @@
     @apply font-extrabold bg-gradient-to-br from-black to-black bg-clip-text tracking-tighter 
     text-transparent pb-4 pr-2;
   }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }
 
 @theme inline {

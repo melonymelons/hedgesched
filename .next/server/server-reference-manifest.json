@@ -6,6 +6,14 @@
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
+        "app/(main)/dashboard/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/(main)/availability/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Favailability.js%22%2C%5B%7B%22id%22%3A%22001b8a9d58174db448df2ccd2fca09286f71b024b2%22%2C%22exportedName%22%3A%22getUserAvailability%22%7D%2C%7B%22id%22%3A%2240e1f74f6096bccb3525ee86eef2a6878734238594%22%2C%22exportedName%22%3A%22updateAvailability%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
         "app/[username]/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fusers.js%22%2C%5B%7B%22id%22%3A%224000e2329bda1189359ba1d1b993ec1931781c06e0%22%2C%22exportedName%22%3A%22getUserByUsername%22%7D%2C%7B%22id%22%3A%22406701e9474fafdc14eb8bf61313764d652933bc9c%22%2C%22exportedName%22%3A%22updateUsername%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
@@ -13,12 +21,19 @@
         "app/[username]/[eventId]/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
+        },
+        "app/(main)/events/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
         }
       },
       "layer": {
         "app/page": "rsc",
+        "app/(main)/dashboard/page": "rsc",
+        "app/(main)/availability/page": "rsc",
         "app/[username]/page": "rsc",
-        "app/[username]/[eventId]/page": "rsc"
+        "app/[username]/[eventId]/page": "rsc",
+        "app/(main)/events/page": "rsc"
       }
     },
     "7fe80b6048122672451385f7901f54833f4de08845": {
@@ -27,6 +42,14 @@
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
+        "app/(main)/dashboard/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/(main)/availability/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Favailability.js%22%2C%5B%7B%22id%22%3A%22001b8a9d58174db448df2ccd2fca09286f71b024b2%22%2C%22exportedName%22%3A%22getUserAvailability%22%7D%2C%7B%22id%22%3A%2240e1f74f6096bccb3525ee86eef2a6878734238594%22%2C%22exportedName%22%3A%22updateAvailability%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
         "app/[username]/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fusers.js%22%2C%5B%7B%22id%22%3A%224000e2329bda1189359ba1d1b993ec1931781c06e0%22%2C%22exportedName%22%3A%22getUserByUsername%22%7D%2C%7B%22id%22%3A%22406701e9474fafdc14eb8bf61313764d652933bc9c%22%2C%22exportedName%22%3A%22updateUsername%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
@@ -34,12 +57,19 @@
         "app/[username]/[eventId]/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
+        },
+        "app/(main)/events/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
         }
       },
       "layer": {
         "app/page": "rsc",
+        "app/(main)/dashboard/page": "rsc",
+        "app/(main)/availability/page": "rsc",
         "app/[username]/page": "rsc",
-        "app/[username]/[eventId]/page": "rsc"
+        "app/[username]/[eventId]/page": "rsc",
+        "app/(main)/events/page": "rsc"
       }
     },
     "7ff40c19975de4b480711c1d1b21b657c98bb81b92": {
@@ -48,6 +78,14 @@
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         },
+        "app/(main)/dashboard/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
+        "app/(main)/availability/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Favailability.js%22%2C%5B%7B%22id%22%3A%22001b8a9d58174db448df2ccd2fca09286f71b024b2%22%2C%22exportedName%22%3A%22getUserAvailability%22%7D%2C%7B%22id%22%3A%2240e1f74f6096bccb3525ee86eef2a6878734238594%22%2C%22exportedName%22%3A%22updateAvailability%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        },
         "app/[username]/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fusers.js%22%2C%5B%7B%22id%22%3A%224000e2329bda1189359ba1d1b993ec1931781c06e0%22%2C%22exportedName%22%3A%22getUserByUsername%22%7D%2C%7B%22id%22%3A%22406701e9474fafdc14eb8bf61313764d652933bc9c%22%2C%22exportedName%22%3A%22updateUsername%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
@@ -55,12 +93,19 @@
         "app/[username]/[eventId]/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
+        },
+        "app/(main)/events/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
         }
       },
       "layer": {
         "app/page": "rsc",
+        "app/(main)/dashboard/page": "rsc",
+        "app/(main)/availability/page": "rsc",
         "app/[username]/page": "rsc",
-        "app/[username]/[eventId]/page": "rsc"
+        "app/[username]/[eventId]/page": "rsc",
+        "app/(main)/events/page": "rsc"
       }
     },
     "00ed983357dcfe82df5234b47038d2ed4250b25b5f": {
@@ -69,6 +114,14 @@
           "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
         },
+        "app/(main)/dashboard/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fusers.js%22%2C%5B%7B%22id%22%3A%224000e2329bda1189359ba1d1b993ec1931781c06e0%22%2C%22exportedName%22%3A%22getUserByUsername%22%7D%2C%7B%22id%22%3A%22406701e9474fafdc14eb8bf61313764d652933bc9c%22%2C%22exportedName%22%3A%22updateUsername%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/(main)/availability/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
         "app/[username]/page": {
           "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
@@ -76,12 +129,19 @@
         "app/[username]/[eventId]/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
+        },
+        "app/(main)/events/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
         }
       },
       "layer": {
         "app/page": "action-browser",
+        "app/(main)/dashboard/page": "action-browser",
+        "app/(main)/availability/page": "action-browser",
         "app/[username]/page": "action-browser",
-        "app/[username]/[eventId]/page": "rsc"
+        "app/[username]/[eventId]/page": "rsc",
+        "app/(main)/events/page": "rsc"
       }
     },
     "403e417727e09d695ea5536ca4a08cea00166cbe8f": {
@@ -90,6 +150,14 @@
           "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
         },
+        "app/(main)/dashboard/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fusers.js%22%2C%5B%7B%22id%22%3A%224000e2329bda1189359ba1d1b993ec1931781c06e0%22%2C%22exportedName%22%3A%22getUserByUsername%22%7D%2C%7B%22id%22%3A%22406701e9474fafdc14eb8bf61313764d652933bc9c%22%2C%22exportedName%22%3A%22updateUsername%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/(main)/availability/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
         "app/[username]/page": {
           "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
@@ -97,12 +165,19 @@
         "app/[username]/[eventId]/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
+        },
+        "app/(main)/events/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
         }
       },
       "layer": {
         "app/page": "action-browser",
+        "app/(main)/dashboard/page": "action-browser",
+        "app/(main)/availability/page": "action-browser",
         "app/[username]/page": "action-browser",
-        "app/[username]/[eventId]/page": "rsc"
+        "app/[username]/[eventId]/page": "rsc",
+        "app/(main)/events/page": "rsc"
       }
     },
     "404ee03dd55a58cb30aa02d7cd56733882ac27e9a1": {
@@ -111,6 +186,14 @@
           "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
         },
+        "app/(main)/dashboard/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fusers.js%22%2C%5B%7B%22id%22%3A%224000e2329bda1189359ba1d1b993ec1931781c06e0%22%2C%22exportedName%22%3A%22getUserByUsername%22%7D%2C%7B%22id%22%3A%22406701e9474fafdc14eb8bf61313764d652933bc9c%22%2C%22exportedName%22%3A%22updateUsername%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/(main)/availability/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
         "app/[username]/page": {
           "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
@@ -118,12 +201,19 @@
         "app/[username]/[eventId]/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
+        },
+        "app/(main)/events/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
         }
       },
       "layer": {
         "app/page": "action-browser",
+        "app/(main)/dashboard/page": "action-browser",
+        "app/(main)/availability/page": "action-browser",
         "app/[username]/page": "action-browser",
-        "app/[username]/[eventId]/page": "rsc"
+        "app/[username]/[eventId]/page": "rsc",
+        "app/(main)/events/page": "rsc"
       }
     },
     "40fb3827bdcddb274cbf240ea92e09db9fcfefba58": {
@@ -132,6 +222,14 @@
           "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
         },
+        "app/(main)/dashboard/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fusers.js%22%2C%5B%7B%22id%22%3A%224000e2329bda1189359ba1d1b993ec1931781c06e0%22%2C%22exportedName%22%3A%22getUserByUsername%22%7D%2C%7B%22id%22%3A%22406701e9474fafdc14eb8bf61313764d652933bc9c%22%2C%22exportedName%22%3A%22updateUsername%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/(main)/availability/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
         "app/[username]/page": {
           "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
@@ -139,12 +237,19 @@
         "app/[username]/[eventId]/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
+        },
+        "app/(main)/events/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
         }
       },
       "layer": {
         "app/page": "action-browser",
+        "app/(main)/dashboard/page": "action-browser",
+        "app/(main)/availability/page": "action-browser",
         "app/[username]/page": "action-browser",
-        "app/[username]/[eventId]/page": "rsc"
+        "app/[username]/[eventId]/page": "rsc",
+        "app/(main)/events/page": "rsc"
       }
     },
     "60b228805d924e9573d0f23d05059d606379e33832": {
@@ -153,6 +258,14 @@
           "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
         },
+        "app/(main)/dashboard/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fusers.js%22%2C%5B%7B%22id%22%3A%224000e2329bda1189359ba1d1b993ec1931781c06e0%22%2C%22exportedName%22%3A%22getUserByUsername%22%7D%2C%7B%22id%22%3A%22406701e9474fafdc14eb8bf61313764d652933bc9c%22%2C%22exportedName%22%3A%22updateUsername%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/(main)/availability/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
         "app/[username]/page": {
           "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
@@ -160,17 +273,32 @@
         "app/[username]/[eventId]/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
+        },
+        "app/(main)/events/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
         }
       },
       "layer": {
         "app/page": "action-browser",
+        "app/(main)/dashboard/page": "action-browser",
+        "app/(main)/availability/page": "action-browser",
         "app/[username]/page": "action-browser",
-        "app/[username]/[eventId]/page": "rsc"
+        "app/[username]/[eventId]/page": "rsc",
+        "app/(main)/events/page": "rsc"
       }
     },
     "7fa2a1cfadcdb6b46597bdc9698dbdbf574015185c": {
       "workers": {
         "app/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/(main)/dashboard/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fusers.js%22%2C%5B%7B%22id%22%3A%224000e2329bda1189359ba1d1b993ec1931781c06e0%22%2C%22exportedName%22%3A%22getUserByUsername%22%7D%2C%7B%22id%22%3A%22406701e9474fafdc14eb8bf61313764d652933bc9c%22%2C%22exportedName%22%3A%22updateUsername%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/(main)/availability/page": {
           "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
         },
@@ -181,34 +309,73 @@
         "app/[username]/[eventId]/page": {
           "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
+        },
+        "app/(main)/events/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
         }
       },
       "layer": {
         "app/page": "action-browser",
+        "app/(main)/dashboard/page": "action-browser",
+        "app/(main)/availability/page": "action-browser",
         "app/[username]/page": "action-browser",
-        "app/[username]/[eventId]/page": "action-browser"
+        "app/[username]/[eventId]/page": "action-browser",
+        "app/(main)/events/page": "action-browser"
       }
     },
     "4000e2329bda1189359ba1d1b993ec1931781c06e0": {
       "workers": {
+        "app/(main)/dashboard/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fusers.js%22%2C%5B%7B%22id%22%3A%224000e2329bda1189359ba1d1b993ec1931781c06e0%22%2C%22exportedName%22%3A%22getUserByUsername%22%7D%2C%7B%22id%22%3A%22406701e9474fafdc14eb8bf61313764d652933bc9c%22%2C%22exportedName%22%3A%22updateUsername%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
         "app/[username]/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fusers.js%22%2C%5B%7B%22id%22%3A%224000e2329bda1189359ba1d1b993ec1931781c06e0%22%2C%22exportedName%22%3A%22getUserByUsername%22%7D%2C%7B%22id%22%3A%22406701e9474fafdc14eb8bf61313764d652933bc9c%22%2C%22exportedName%22%3A%22updateUsername%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         }
       },
       "layer": {
+        "app/(main)/dashboard/page": "action-browser",
         "app/[username]/page": "rsc"
       }
     },
     "406701e9474fafdc14eb8bf61313764d652933bc9c": {
       "workers": {
+        "app/(main)/dashboard/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fevents.js%22%2C%5B%7B%22id%22%3A%2200ed983357dcfe82df5234b47038d2ed4250b25b5f%22%2C%22exportedName%22%3A%22getUserEvents%22%7D%2C%7B%22id%22%3A%22403e417727e09d695ea5536ca4a08cea00166cbe8f%22%2C%22exportedName%22%3A%22deleteEvent%22%7D%2C%7B%22id%22%3A%22404ee03dd55a58cb30aa02d7cd56733882ac27e9a1%22%2C%22exportedName%22%3A%22createEvent%22%7D%2C%7B%22id%22%3A%2240fb3827bdcddb274cbf240ea92e09db9fcfefba58%22%2C%22exportedName%22%3A%22getEventAvailability%22%7D%2C%7B%22id%22%3A%2260b228805d924e9573d0f23d05059d606379e33832%22%2C%22exportedName%22%3A%22getEventDetails%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fusers.js%22%2C%5B%7B%22id%22%3A%224000e2329bda1189359ba1d1b993ec1931781c06e0%22%2C%22exportedName%22%3A%22getUserByUsername%22%7D%2C%7B%22id%22%3A%22406701e9474fafdc14eb8bf61313764d652933bc9c%22%2C%22exportedName%22%3A%22updateUsername%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
         "app/[username]/page": {
           "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fusers.js%22%2C%5B%7B%22id%22%3A%224000e2329bda1189359ba1d1b993ec1931781c06e0%22%2C%22exportedName%22%3A%22getUserByUsername%22%7D%2C%7B%22id%22%3A%22406701e9474fafdc14eb8bf61313764d652933bc9c%22%2C%22exportedName%22%3A%22updateUsername%22%7D%5D%5D%5D&__client_imported__=!",
           "async": false
         }
       },
       "layer": {
+        "app/(main)/dashboard/page": "action-browser",
         "app/[username]/page": "rsc"
+      }
+    },
+    "001b8a9d58174db448df2ccd2fca09286f71b024b2": {
+      "workers": {
+        "app/(main)/availability/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Favailability.js%22%2C%5B%7B%22id%22%3A%22001b8a9d58174db448df2ccd2fca09286f71b024b2%22%2C%22exportedName%22%3A%22getUserAvailability%22%7D%2C%7B%22id%22%3A%2240e1f74f6096bccb3525ee86eef2a6878734238594%22%2C%22exportedName%22%3A%22updateAvailability%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/(main)/availability/page": "rsc"
+      }
+    },
+    "40e1f74f6096bccb3525ee86eef2a6878734238594": {
+      "workers": {
+        "app/(main)/availability/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fkeyless-actions.js%22%2C%5B%7B%22id%22%3A%227f9220a91a4df0868d0512fc7d770f089d265bcaf5%22%2C%22exportedName%22%3A%22createOrReadKeylessAction%22%7D%2C%7B%22id%22%3A%227fe80b6048122672451385f7901f54833f4de08845%22%2C%22exportedName%22%3A%22deleteKeylessAction%22%7D%2C%7B%22id%22%3A%227ff40c19975de4b480711c1d1b21b657c98bb81b92%22%2C%22exportedName%22%3A%22syncKeylessConfigAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Favailability.js%22%2C%5B%7B%22id%22%3A%22001b8a9d58174db448df2ccd2fca09286f71b024b2%22%2C%22exportedName%22%3A%22getUserAvailability%22%7D%2C%7B%22id%22%3A%2240e1f74f6096bccb3525ee86eef2a6878734238594%22%2C%22exportedName%22%3A%22updateAvailability%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/(main)/availability/page": "rsc"
       }
     }
   },

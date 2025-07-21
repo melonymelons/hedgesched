@@ -5,6 +5,7 @@ import EventDetails from "./_components/event-details";
 import BookingForm from "./_components/booking-form";
 
 export async function generateMetadata ({params}) {
+
     const resolvedParams = await Promise.resolve(params);
     const username = resolvedParams?.username;
     const eventId = resolvedParams?.eventId;
@@ -46,5 +47,6 @@ const EventPage = async ({params}) => {
         </div>
     );
 };
+
 
 export default EventPage;

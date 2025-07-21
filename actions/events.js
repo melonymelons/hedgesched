@@ -115,7 +115,7 @@ export async function getEventDetails(username, eventId) {
     return event;
 }
 
-export async function getEventAvailability(eventId) {
+/*export async function getEventAvailability(eventId) {
     const event = await db.event.findUnique({
         where: {
             id: eventId,
@@ -177,6 +177,85 @@ export async function getEventAvailability(eventId) {
 
     return availableDates;
 }
+*/
+
+export async function getEventAvailability(eventId) {
+    const event = await db.event.findUnique({
+      where: { id: eventId },
+      include: {
+        user: {
+          include: {
+            availability: {
+              include: { days: true },
+            },
+          },
+        },
+      },
+    });
+  
+    if (!event || !event.user.availability) return [];
+  
+    const { days, timeGap } = event.user.availability;
+    const result = [];
+    const today = new Date();
+  
+    // Helper to format date in China Standard Time (yyyy-MM-dd)
+    function formatDateToCST(date) {
+      const chinaTime = new Date(date.getTime() + 8 * 60 * 60 * 1000);
+      return chinaTime.toISOString().split("T")[0];
+    }
+  
+    // Generate next 14 days
+    for (let i = 0; i < 14; i++) {
+      const date = new Date(today);
+      date.setDate(today.getDate() + i);
+  
+      // Determine CST weekday name
+      const weekday = new Date(date.getTime() + 8 * 60 * 60 * 1000)
+        .toLocaleDateString("en-US", {
+          weekday: "long",
+          timeZone: "Asia/Shanghai",
+        })
+        .toUpperCase();
+  
+      const match = days.find((d) => d.day === weekday);
+      if (!match) continue;
+  
+      const slots = [];
+      
+                    const startTime = new Date(match.startTime);
+                    const endTime = new Date(match.endTime);
+                    
+                    // Use the real date we're looping over, but apply only the hour/minute from availability
+                    const year = date.getUTCFullYear();
+                    const month = date.getUTCMonth();
+                    const day = date.getUTCDate();
+                    
+                    let currentUTC = new Date(Date.UTC(year, month, day, startTime.getUTCHours(), startTime.getUTCMinutes()));
+                    const endUTC = new Date(Date.UTC(year, month, day, endTime.getUTCHours(), endTime.getUTCMinutes()));
+                    
+                    while (currentUTC < endUTC) {
+                        const chinaTime = new Date(currentUTC.getTime() + 8 * 60 * 60 * 1000);
+                        const slotStr = chinaTime.toISOString().slice(11, 16); // HH:mm format
+                        slots.push(slotStr);
+                    
+                        currentUTC = new Date(currentUTC.getTime() + timeGap * 60 * 1000);
+                    }
+                    
+      result.push({
+        date: formatDateToCST(date),
+        slots,
+      });
+    }
+  
+    return result;
+  }
+//^replacement
+  
+
+
+
+
 
 function generateAvailabilityTimeSlots(
     startTime,
