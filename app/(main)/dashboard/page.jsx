@@ -10,6 +10,8 @@ import { usernameSchema } from '@/app/lib/validators';
 import useFetch from '@/hooks/use-fetch';
 import { updateUsername } from '@/actions/users';
 import { BarLoader } from 'react-spinners';
+import { getLastestUpdates } from '@/actions/dashboard';
+import { format } from 'date-fns';
 
 const Dashboard = () => {
    const {isLoaded, user} = useUser();
@@ -39,6 +41,16 @@ const Dashboard = () => {
         fnUpdateUsername(data.username);
     };
 
+    const {
+        loading: loadingUpdates,
+        data: upcomingMeetings,
+        fn: fnUpdates,
+    } = useFetch(getLastestUpdates);
+
+    useEffect(() => {
+        (async () => await fnUpdates())();
+    }, []);
+
     return (
         <div className = "space-y-8">
             <Card>
@@ -47,7 +59,20 @@ const Dashboard = () => {
                         欢迎, {user?.firstName}
                     </CardTitle>
                 </CardHeader>
-              { /* Latest Updates */ }
+              <CardContent>
+                {!loadingUpdates?(
+                    <div>{upcomingMeetings && upcomingMeetings.length>0?(
+                        <ul>
+                            {upcomingMeetings.map((meeting) => {
+                                return (<li key = {meeting.id}> - {meeting.event.title} on {" "} 
+                                {format( new Date(meeting.startTime), "MMM d, yyyy h:mm a")}{" "} 和 {meeting.name}</li>);
+                                })}
+                        </ul>
+                    ):(<p>没有即将举行的会议</p>)}</div>
+                ):(
+                    <p>加载更新...</p>
+                )}
+              </CardContent>
             </Card>
             <Card>
                 <CardHeader>
