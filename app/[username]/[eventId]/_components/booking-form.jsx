@@ -12,21 +12,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import useFetch from "@/hooks/use-fetch";
 import { createBooking } from "@/actions/bookings";
-
-
-function formatTimeSlot(slot) {
-    return slot; 
-  }
-
-  function toShanghaiDate(date) {
-    const offsetMilliseconds = 8 * 60 * 60 * 1000;
-    return new Date(date.getTime() + offsetMilliseconds);
-  }
-  
-  function formatDateToShanghai(date) {
-    const shanghaiDate = toShanghaiDate(date);
-    return shanghaiDate.toISOString().slice(0, 10); 
-  }
   
 const BookingForm = ({event, availability}) => {
     
@@ -37,15 +22,17 @@ const BookingForm = ({event, availability}) => {
         resolver: zodResolver(bookingSchema),
     });
 
-    const availableDays = availability.map((day) =>
+    /*const availableDays = availability.map((day) =>
         new Date(day.date + "T00:00:00")
     );
-          
+    */
+    const availableDateStrings = new Set(availability.map(day => day.date));
+    
     const timeSlots = selectedDate
-        ? availability.find(
-        (day) => day.date === formatDateToShanghai(selectedDate)
+    ? availability.find(
+        (day) => day.date === selectedDate.toISOString().slice(0, 10)
         )?.slots || []
-    : []; 
+    : [];
 
     useEffect(() => {
         if(selectedDate) {
@@ -101,24 +88,30 @@ const BookingForm = ({event, availability}) => {
         <div className = "flex flex-col gap-8 p-10 border bg-white"> 
             <div className = "md: h-96 flex flex-col md: flex-row gap-5">
                 <div className = "w-full">
-                    <DayPicker 
-                    mode = "single"
-                    selected = {selectedDate}
-                    onSelect = {(date) => {
-                        setSelectedDate(date);
-                        setSelectedTime(null);
-                    }}
-                    disabled = {[{ before: new Date() }]}
-                    modifiers = {{
-                        available: availableDays,
-                    }}
-                    modifiersStyles = {{
-                        available: {
-                            background: "#ffe5e5",
-                            borderRadius: 100,
-                        },
-                    }}
-                    />
+                            <DayPicker
+                            mode="single"
+                            selected={selectedDate}
+                            onSelect={(date) => {
+                                setSelectedDate(date);
+                                setSelectedTime(null);
+                            }}
+                            disabled={(date) => {
+                                const iso = date.toISOString().slice(0, 10);
+                                return !availableDateStrings.has(iso);
+                            }}
+                            modifiers={{
+                                available: (date) => {
+                                const iso = date.toISOString().slice(0, 10);
+                                return availableDateStrings.has(iso);
+                                }
+                            }}
+                            modifiersStyles={{
+                                available: {
+                                backgroundColor: "#ffe5e5",
+                                borderRadius: "100%",
+                                }
+                            }}
+                            />
                 </div>
                     <div className = "w-full h-full md: overflow-scroll no-scrollbar">
                         {selectedDate && (
@@ -188,6 +181,51 @@ export default BookingForm;
           shiftedDate.setDate(shiftedDate.getDate() + -1); // Force +1 day
           return day.date === format(shiftedDate, "yyyy-MM-dd");
         })?.slots || []
-      : [];   */
+      : [];   
+
+
+
+
+
+      const timeSlots = selectedDate
+        ? availability.find(
+        (day) => day.date === formatDateToShanghai(selectedDate)
+        )?.slots || []
+    : []; 
+             ^^^^^ most recent timeSlots. use this when errors arise.
+        
+function formatTimeSlot(slot) {
+    return slot; 
+  }
+
+  function toShanghaiDate(date) {
+    const offsetMilliseconds = 8 * 60 * 60 * 1000;
+    return new Date(date.getTime() + offsetMilliseconds);
+  }
+  
+  function formatDateToShanghai(date) {
+    const shanghaiDate = toShanghaiDate(date);
+    return shanghaiDate.toISOString().slice(0, 10); 
+  }
+
+                    <DayPicker 
+                    mode = "single"
+                    selected = {selectedDate}
+                    onSelect = {(date) => {
+                        setSelectedDate(date);
+                        setSelectedTime(null);
+                    }}
+                    disabled = {[{ before: new Date() }]}
+                    modifiers = {{
+                        available: availableDays,
+                    }}
+                    modifiersStyles = {{
+                        available: {
+                            background: "#ffe5e5",
+                            borderRadius: 100,
+                        },
+                    }}
+                    />
+      */
 
     //does it shift a day only in the afternoon? test it out. in the morning it works fine with the original code.

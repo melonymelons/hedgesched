@@ -1,3 +1,4 @@
+
 "use server";
 
 import { db } from "@/lib/prisma";
@@ -138,3 +139,5 @@ export async function getUserAvailability() {
   
     return availabilityData;
   }
+
+  
