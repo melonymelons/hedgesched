@@ -347,7 +347,7 @@
           "async": false
         },
         "app/[username]/[eventId]/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fbookings.js%22%2C%5B%7B%22id%22%3A%224027aa11255336883d2e18f6cf8a4d90108a3549d6%22%2C%22exportedName%22%3A%22createBooking%22%7D%5D%5D%5D&__client_imported__=true!",
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fbookings.js%22%2C%5B%7B%22id%22%3A%224027aa11255336883d2e18f6cf8a4d90108a3549d6%22%2C%22exportedName%22%3A%22createBooking%22%7D%2C%7B%22id%22%3A%22607ea912e66a52339aa42bdbf44f61af8e9b4e7f34%22%2C%22exportedName%22%3A%22getBookedSlots%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
         },
         "app/(main)/events/page": {
@@ -437,7 +437,29 @@
     "4027aa11255336883d2e18f6cf8a4d90108a3549d6": {
       "workers": {
         "app/[username]/[eventId]/page": {
-          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fbookings.js%22%2C%5B%7B%22id%22%3A%224027aa11255336883d2e18f6cf8a4d90108a3549d6%22%2C%22exportedName%22%3A%22createBooking%22%7D%5D%5D%5D&__client_imported__=true!",
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fbookings.js%22%2C%5B%7B%22id%22%3A%224027aa11255336883d2e18f6cf8a4d90108a3549d6%22%2C%22exportedName%22%3A%22createBooking%22%7D%2C%7B%22id%22%3A%22607ea912e66a52339aa42bdbf44f61af8e9b4e7f34%22%2C%22exportedName%22%3A%22getBookedSlots%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/[username]/[eventId]/page": "action-browser"
+      }
+    },
+    "40e022e5f5f4be4537fa113425488b25f646155bf1": {
+      "workers": {
+        "app/[username]/[eventId]/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fbookings.js%22%2C%5B%7B%22id%22%3A%224027aa11255336883d2e18f6cf8a4d90108a3549d6%22%2C%22exportedName%22%3A%22createBooking%22%7D%2C%7B%22id%22%3A%22607ea912e66a52339aa42bdbf44f61af8e9b4e7f34%22%2C%22exportedName%22%3A%22getBookedSlots%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/[username]/[eventId]/page": "action-browser"
+      }
+    },
+    "607ea912e66a52339aa42bdbf44f61af8e9b4e7f34": {
+      "workers": {
+        "app/[username]/[eventId]/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227fa2a1cfadcdb6b46597bdc9698dbdbf574015185c%22%2C%22exportedName%22%3A%22invalidateCacheAction%22%7D%5D%5D%2C%5B%22%2FUsers%2Fhluo%2FDocuments%2FGitHub%2Fhedgesched%2Factions%2Fbookings.js%22%2C%5B%7B%22id%22%3A%224027aa11255336883d2e18f6cf8a4d90108a3549d6%22%2C%22exportedName%22%3A%22createBooking%22%7D%2C%7B%22id%22%3A%22607ea912e66a52339aa42bdbf44f61af8e9b4e7f34%22%2C%22exportedName%22%3A%22getBookedSlots%22%7D%5D%5D%5D&__client_imported__=true!",
           "async": false
         }
       },
