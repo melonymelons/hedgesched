@@ -1,9 +1,8 @@
 {
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/[username]/[eventId]/page": "app/[username]/[eventId]/page.js",
   "/page": "app/page.js",
-  "/(main)/events/page": "app/(main)/events/page.js",
-  "/(main)/meetings/page": "app/(main)/meetings/page.js",
   "/(main)/dashboard/page": "app/(main)/dashboard/page.js",
+  "/(main)/meetings/page": "app/(main)/meetings/page.js",
+  "/(main)/events/page": "app/(main)/events/page.js",
   "/(main)/availability/page": "app/(main)/availability/page.js"
 }
