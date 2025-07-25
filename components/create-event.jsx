@@ -1,3 +1,4 @@
+/*
 "use client";
 //import * as React from "react";
 
@@ -53,4 +54,69 @@ export default function CreateEventDrawer() {
       </DrawerContent>
       </Drawer>
   )
+}
+  */
+
+"use client";
+import { Suspense, useEffect, useState } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
+
+import { Button } from "@/components/ui/button"
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+} from "@/components/ui/drawer"
+import EventForm from "./event-form";
+
+function DrawerContentComponent() {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const create = searchParams.get("create");
+    if (create === 'true') {
+      setIsOpen(true);
+    }
+  }, [searchParams]);
+
+  const handleClose = () => {
+    setIsOpen(false);
+    if (searchParams.get("create") === "true") {
+      router.replace(window?.location?.pathname);
+    }
+  };
+
+  return (
+    <Drawer open={isOpen} onClose={handleClose}>
+        <DrawerContent>
+        <DrawerHeader>
+        <DrawerTitle>创建新事件</DrawerTitle>
+        </DrawerHeader>
+            <EventForm
+            onSubmitForm = {()=>{
+                handleClose();
+            }}
+            />
+          <DrawerFooter>
+            <DrawerClose asChild>
+              <Button variant="outline" onClick={handleClose}>Cancel</Button>
+            </DrawerClose>
+          </DrawerFooter>
+      </DrawerContent>
+    </Drawer>
+  );
+}
+
+export default function CreateEventDrawer() {
+  return (
+    <Suspense fallback={null}>
+      <DrawerContentComponent />
+    </Suspense>
+  );
 }
