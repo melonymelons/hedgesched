@@ -1,11 +1,26 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { format } from "date-fns";
 import { Calendar, Clock } from "lucide-react";
-import React from "react";
+import React, { useEffect } from "react";
 import CancelMeetingButton from "./cancel-meeting";
+import useFetch from "@/hooks/use-fetch";
+import { getLastestUpdates } from "@/actions/dashboard";
 
 const MeetingList = ({meetings, type}) => {
+   
+    const {
+        loading: loadingUpdates,
+        data: upcomingMeetings,
+        data: PastMeetings,
+        fn: fnUpdates,
+    } = useFetch(getLastestUpdates);
+    useEffect(() => {
+        (async () => await fnUpdates())();
+    }, []);
+    //ADDED ^^^
 
     if(meetings.length === 0) {
         return (
@@ -29,15 +44,22 @@ const MeetingList = ({meetings, type}) => {
                     <div className = "flex items-center mb-2">
                         <Calendar className = "mr-2 h-4 w-4" />
                         <span>
-                         {/*  {format(new Date(meeting.startTime), "MMMM d, yyyy")} */}  
-                            {format(new Date(meeting.startTime), "MMM d, yyyy h:mm a")}
+                          {format(new Date(meeting.startTime), "MMMM d, yyyy")}  
                         </span>
                     </div>
                     <div className = "flex items-center mb-2">
                         <Clock className = "mr-2 h-4 w-4" />
                         <span>
-                            {format(new Date(meeting.startTime), "h:mm a")} -{" "}
-                            {format(new Date(meeting.endTime), "h:mm a")}
+                         {/* {format(new Date(meeting.startTime), "h:mm a")} -{" "}
+                            {format(new Date(meeting.endTime), "h:mm a")} */}   
+                                            {!loadingUpdates ? (
+                                                <div>
+                                                {format(new Date(meeting.startTime), "h:mm a")} -{" "}
+                                                {format(new Date(meeting.endTime), "h:mm a")} 
+                                                </div>
+                                                ) : (
+                                                    <p></p>
+                                                )}
                         </span>
                     </div>
                 </CardContent>
