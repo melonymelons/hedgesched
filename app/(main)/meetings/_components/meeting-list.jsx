@@ -29,7 +29,8 @@ const MeetingList = ({meetings, type}) => {
                     <div className = "flex items-center mb-2">
                         <Calendar className = "mr-2 h-4 w-4" />
                         <span>
-                            {format(new Date(meeting.startTime), "MMMM d, yyyy")}
+                         {/*  {format(new Date(meeting.startTime), "MMMM d, yyyy")} */}  
+                            {format(new Date(meeting.startTime), "MMM d, yyyy h:mm a")}
                         </span>
                     </div>
                     <div className = "flex items-center mb-2">
