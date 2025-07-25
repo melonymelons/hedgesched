@@ -34,6 +34,7 @@ export async function createBooking(bookingData){
     }
 }
 
+
 export async function getBookedSlots(eventId, date) {
     const startOfDay = new Date(date);
     startOfDay.setHours(0, 0, 0, 0);
@@ -59,6 +60,13 @@ export async function getBookedSlots(eventId, date) {
     );
 }
 
+
+
+
+
+
+
+  
 
 /*
 "use server";

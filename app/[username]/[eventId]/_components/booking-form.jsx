@@ -16,8 +16,8 @@ import { createBooking, getBookedSlots } from "@/actions/bookings";
 const BookingForm = ({ event, availability }) => {
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState(null);
+  const [lastFetchedDate, setLastFetchedDate] = useState(null);
   
-  // Replace local state with useFetch pattern
   const {
     loading: loadingBookedSlots,
     data: bookedSlots,
@@ -29,6 +29,7 @@ const BookingForm = ({ event, availability }) => {
     handleSubmit,
     formState: { errors },
     setValue,
+    reset,
   } = useForm({
     resolver: zodResolver(bookingSchema),
   });
@@ -55,15 +56,23 @@ const BookingForm = ({ event, availability }) => {
   });
 
   const timeSlots = selectedDate
-    ? availableDatesMap.get(format(selectedDate, 'yyyy-MM-dd'))?.filter(slot => 
-        !bookedSlots?.includes(slot)
-      ) || []
+    ? availableDatesMap.get(format(selectedDate, 'yyyy-MM-dd'))?.filter(slot => {
+        // Convert bookedSlots to a Set for faster lookups
+        const bookedSlotsSet = new Set(bookedSlots || []);
+        return !bookedSlotsSet.has(slot);
+      }) || []
     : [];
 
   useEffect(() => {
     if (selectedDate) {
-      setValue("date", format(selectedDate, "yyyy-MM-dd"));
-      fnGetBookedSlots(event.id, format(selectedDate, "yyyy-MM-dd"));
+      const dateStr = format(selectedDate, "yyyy-MM-dd");
+      setValue("date", dateStr);
+      
+      // Only fetch if the date has changed or it's the first time
+      if (dateStr !== lastFetchedDate) {
+        fnGetBookedSlots(event.id, dateStr);
+        setLastFetchedDate(dateStr);
+      }
     }
   }, [selectedDate]);
 
@@ -75,7 +84,7 @@ const BookingForm = ({ event, availability }) => {
 
   const { loading, data, fn: fnCreateBooking } = useFetch(createBooking);
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (formData) => {
     if (!selectedDate || !selectedTime) {
       console.error("未选择日期或时间");
       return;
@@ -89,18 +98,27 @@ const BookingForm = ({ event, availability }) => {
 
     const bookingData = {
       eventId: event.id,
-      name: data.name,
-      email: data.email,
+      name: formData.name,
+      email: formData.email,
       startTime: startTime.toISOString(),
       endTime: endTime.toISOString(),
-      additionalInfo: data.additionalInfo,
+      additionalInfo: formData.additionalInfo,
     };
 
-    await fnCreateBooking(bookingData);
+    const result = await fnCreateBooking(bookingData);
     
-    // Refresh booked slots after successful booking
-    if (selectedDate) {
-      await fnGetBookedSlots(event.id, format(selectedDate, "yyyy-MM-dd"));
+    // Only refresh if the booking was successful
+    if (result && !result.error && selectedDate) {
+      // Clear the form
+      reset();
+      setSelectedTime(null);
+      
+      // Force refresh booked slots by passing a new timestamp
+      await fnGetBookedSlots(
+        event.id, 
+        format(selectedDate, "yyyy-MM-dd"),
+        Date.now() // Cache buster
+      );
     }
   };
 
@@ -148,19 +166,23 @@ const BookingForm = ({ event, availability }) => {
             <div className="mb-4">
               <h3 className="text-lg font-semibold mb-2">可用时段</h3>
               {!loadingBookedSlots ? (
-                <div className="grid grid-cols-2 lg:grid-cols-3 gap-2">
-                  {timeSlots.map((slot) => (
-                    <Button
-                      key={slot}
-                      onClick={() => setSelectedTime(slot)}
-                      variant={selectedTime === slot ? "default" : "outline"}
-                    >
-                      {slot}
-                    </Button>
-                  ))}
-                </div>
+                timeSlots.length > 0 ? (
+                  <div className="grid grid-cols-2 lg:grid-cols-3 gap-2">
+                    {timeSlots.map((slot) => (
+                      <Button
+                        key={slot}
+                        onClick={() => setSelectedTime(slot)}
+                        variant={selectedTime === slot ? "default" : "outline"}
+                      >
+                        {slot}
+                      </Button>
+                    ))}
+                  </div>
+                ) : (
+                  <p>没有可用的时间段</p>
+                )
               ) : (
-                <p></p>
+                <p>加载中...</p>
               )}
             </div>
           )}
