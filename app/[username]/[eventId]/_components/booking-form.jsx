@@ -17,7 +17,7 @@ const BookingForm = ({ event, availability }) => {
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState(null);
   const [bookedSlots, setBookedSlots] = useState([]);
-  const [loadingBookedSlots, setLoadingBookedSlots] = useState(false); // Add loading state
+  const [loadingBookedSlots, setLoadingBookedSlots] = useState(false);
 
   const {
     register,
@@ -59,13 +59,13 @@ const BookingForm = ({ event, availability }) => {
     if (selectedDate) {
       setValue("date", format(selectedDate, "yyyy-MM-dd"));
       const fetchBookedSlots = async () => {
-        setLoadingBookedSlots(true); // Start loading
+        setLoadingBookedSlots(true);
         try {
           const dateStr = format(selectedDate, "yyyy-MM-dd");
           const booked = await getBookedSlots(event.id, dateStr);
           setBookedSlots(booked);
         } finally {
-          setLoadingBookedSlots(false); // End loading
+          setLoadingBookedSlots(false);
         }
       };
       fetchBookedSlots();
@@ -105,9 +105,14 @@ const BookingForm = ({ event, availability }) => {
     
     // Refresh booked slots after successful booking
     if (selectedDate) {
-      const dateStr = format(selectedDate, "yyyy-MM-dd");
-      const booked = await getBookedSlots(event.id, dateStr);
-      setBookedSlots(booked);
+      setLoadingBookedSlots(true);
+      try {
+        const dateStr = format(selectedDate, "yyyy-MM-dd");
+        const booked = await getBookedSlots(event.id, dateStr);
+        setBookedSlots(booked);
+      } finally {
+        setLoadingBookedSlots(false);
+      }
     }
   };
 
@@ -123,7 +128,7 @@ const BookingForm = ({ event, availability }) => {
 
   return (
     <div className="flex flex-col gap-8 p-10 border bg-white">
-      <div className="md: h-96 flex flex-col md: flex-row gap-5">
+      <div className="md:h-96 flex flex-col md:flex-row gap-5">
         <div className="w-full">
           <DayPicker
             mode="single"
@@ -150,14 +155,12 @@ const BookingForm = ({ event, availability }) => {
             }}
           />
         </div>
-        <div className="w-full h-full md: overflow-scroll no-scrollbar">
+        <div className="w-full h-full md:overflow-scroll no-scrollbar">
           {selectedDate && (
             <div className="mb-4">
               <h3 className="text-lg font-semibold mb-2">可用时段</h3>
-              {loadingBookedSlots ? (
-                <p>加载中...</p>
-              ) : (
-                <div className="grid grid-cols-2 lg: grid-cols-3 gap-2">
+              {!loadingBookedSlots ? (
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-2">
                   {timeSlots.map((slot) => (
                     <Button
                       key={slot}
@@ -168,6 +171,8 @@ const BookingForm = ({ event, availability }) => {
                     </Button>
                   ))}
                 </div>
+              ) : (
+                <p>加载中...</p>
               )}
             </div>
           )}
@@ -176,7 +181,7 @@ const BookingForm = ({ event, availability }) => {
       {selectedTime && (
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           <div>
-            <h2> 别忘了记好你的预约时间和日期。</h2>
+            <h2>别忘了记好你的预约时间和日期。</h2>
           </div>
           <div>
             <Input {...register("name")} placeholder="你的名字" />
