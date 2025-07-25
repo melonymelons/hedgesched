@@ -5,3 +5,13 @@ node_modules
 /.clerk/
 
 /lib/generated/prisma
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# vercel
+.vercel
