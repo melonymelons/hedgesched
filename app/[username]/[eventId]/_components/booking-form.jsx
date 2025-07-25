@@ -1,4 +1,217 @@
+"use client";
 
+import { bookingSchema } from "@/app/lib/validators";
+import { zodResolver } from "@hookform/resolvers/zod";
+import React, { useEffect, useState } from "react";
+import { useForm } from "react-hook-form";
+import { DayPicker } from "react-day-picker";
+import "react-day-picker/style.css";
+import { format, parseISO } from "date-fns";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import useFetch from "@/hooks/use-fetch";
+import { createBooking, getBookedSlots } from "@/actions/bookings";
+
+const BookingForm = ({ event, availability }) => {
+  const [selectedDate, setSelectedDate] = useState(null);
+  const [selectedTime, setSelectedTime] = useState(null);
+  const [bookedSlots, setBookedSlots] = useState([]);
+  const [loadingBookedSlots, setLoadingBookedSlots] = useState(false); // Add loading state
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    setValue,
+  } = useForm({
+    resolver: zodResolver(bookingSchema),
+  });
+
+  const shanghaiTimeStr = new Date().toLocaleTimeString("en-US", {
+    timeZone: "Asia/Shanghai",
+    hour12: false, 
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit"
+  });
+  
+  const currentHour = parseInt(shanghaiTimeStr.split(":")[0]);
+  
+  const availableDatesMap = new Map();
+  availability.forEach(day => {
+    const date = parseISO(day.date);
+    
+    if (currentHour >= 12) {
+      date.setDate(date.getDate() + 1);
+    }
+    
+    availableDatesMap.set(format(date, 'yyyy-MM-dd'), day.slots);
+  });
+
+  const timeSlots = selectedDate
+    ? availableDatesMap.get(format(selectedDate, 'yyyy-MM-dd'))?.filter(slot => 
+        !bookedSlots.includes(slot)
+      ) || []
+    : [];
+
+  useEffect(() => {
+    if (selectedDate) {
+      setValue("date", format(selectedDate, "yyyy-MM-dd"));
+      const fetchBookedSlots = async () => {
+        setLoadingBookedSlots(true); // Start loading
+        try {
+          const dateStr = format(selectedDate, "yyyy-MM-dd");
+          const booked = await getBookedSlots(event.id, dateStr);
+          setBookedSlots(booked);
+        } finally {
+          setLoadingBookedSlots(false); // End loading
+        }
+      };
+      fetchBookedSlots();
+    }
+  }, [selectedDate]);
+
+  useEffect(() => {
+    if (selectedTime) {
+      setValue("time", selectedTime);
+    }
+  }, [selectedTime]);
+
+  const { loading, data, fn: fnCreateBooking } = useFetch(createBooking);
+
+  const onSubmit = async (data) => {
+    if (!selectedDate || !selectedTime) {
+      console.error("未选择日期或时间");
+      return;
+    }
+
+    const startTime = new Date(
+      `${format(selectedDate, "yyyy-MM-dd")}T${selectedTime}`
+    );
+
+    const endTime = new Date(startTime.getTime() + event.duration * 60000);
+
+    const bookingData = {
+      eventId: event.id,
+      name: data.name,
+      email: data.email,
+      startTime: startTime.toISOString(),
+      endTime: endTime.toISOString(),
+      additionalInfo: data.additionalInfo,
+    };
+
+    await fnCreateBooking(bookingData);
+    
+    // Refresh booked slots after successful booking
+    if (selectedDate) {
+      const dateStr = format(selectedDate, "yyyy-MM-dd");
+      const booked = await getBookedSlots(event.id, dateStr);
+      setBookedSlots(booked);
+    }
+  };
+
+  if (data) {
+    return (
+      <div className="text-center p-10 border bg-white">
+        <h2 className="text-2xl font-bold mb-4">
+          预订成功! 别忘了记好你的预约时间和日期。
+        </h2>
+      </div>
+    );
+  }
+
+  return (
+    <div className="flex flex-col gap-8 p-10 border bg-white">
+      <div className="md: h-96 flex flex-col md: flex-row gap-5">
+        <div className="w-full">
+          <DayPicker
+            mode="single"
+            selected={selectedDate}
+            onSelect={(date) => {
+              setSelectedDate(date);
+              setSelectedTime(null);
+            }}
+            disabled={(date) => {
+              const dateStr = format(date, "yyyy-MM-dd");
+              return !availableDatesMap.has(dateStr);
+            }}
+            modifiers={{
+              available: (date) => {
+                const dateStr = format(date, "yyyy-MM-dd");
+                return availableDatesMap.has(dateStr);
+              },
+            }}
+            modifiersStyles={{
+              available: {
+                backgroundColor: "#ffe5e5",
+                borderRadius: "100%",
+              },
+            }}
+          />
+        </div>
+        <div className="w-full h-full md: overflow-scroll no-scrollbar">
+          {selectedDate && (
+            <div className="mb-4">
+              <h3 className="text-lg font-semibold mb-2">可用时段</h3>
+              {loadingBookedSlots ? (
+                <p>加载中...</p>
+              ) : (
+                <div className="grid grid-cols-2 lg: grid-cols-3 gap-2">
+                  {timeSlots.map((slot) => (
+                    <Button
+                      key={slot}
+                      onClick={() => setSelectedTime(slot)}
+                      variant={selectedTime === slot ? "default" : "outline"}
+                    >
+                      {slot}
+                    </Button>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+      </div>
+      {selectedTime && (
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+          <div>
+            <h2> 别忘了记好你的预约时间和日期。</h2>
+          </div>
+          <div>
+            <Input {...register("name")} placeholder="你的名字" />
+            {errors.name && (
+              <p className="text-red-500 text-sm">{errors.name.message}</p>
+            )}
+          </div>
+          <div>
+            <Input
+              {...register("email")}
+              type="email"
+              placeholder="你的电子邮件"
+            />
+            {errors.email && (
+              <p className="text-red-500 text-sm">{errors.email.message}</p>
+            )}
+          </div>
+          <div>
+            <Textarea
+              {...register("additionalInfo")}
+              placeholder="附加信息"
+            />
+          </div>
+          <Button type="submit" disabled={loading} className="w-full">
+            {loading ? "正在安排中..." : "预约时间"}
+          </Button>
+        </form>
+      )}
+    </div>
+  );
+};
+
+export default BookingForm;
+
+/*
 "use client";
 
 import { bookingSchema } from "@/app/lib/validators";
@@ -56,14 +269,13 @@ const shanghaiTimeStr = new Date().toLocaleTimeString("en-US", {
   });
             //ADDED
 
-    /*
-  const availableDatesMap = new Map();
-  availability.forEach(day => {
-    const date = parseISO(day.date);
+ // const availableDatesMap = new Map();
+  //availability.forEach(day => {
+  //  const date = parseISO(day.date);
                                                     //     date.setDate(date.getDate() + 1); // force +1 day
-    availableDatesMap.set(format(date, 'yyyy-MM-dd'), day.slots);
-  });
-  */
+  //  availableDatesMap.set(format(date, 'yyyy-MM-dd'), day.slots);
+ // });
+
 
   const timeSlots = selectedDate
     ? availableDatesMap.get(format(selectedDate, 'yyyy-MM-dd'))?.filter(slot => 
@@ -210,6 +422,7 @@ const shanghaiTimeStr = new Date().toLocaleTimeString("en-US", {
 };
 
 export default BookingForm;
+*/
 
 
   /*   const availableDays = availability.map((day) => {
