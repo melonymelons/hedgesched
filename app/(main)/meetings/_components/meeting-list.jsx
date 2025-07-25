@@ -17,10 +17,10 @@ const MeetingList = ({meetings, type}) => {
         data: PastMeetings,
         fn: fnUpdates,
     } = useFetch(getLastestUpdates);
+
     useEffect(() => {
         (async () => await fnUpdates())();
     }, []);
-    //ADDED ^^^
 
     if(meetings.length === 0) {
         return (
