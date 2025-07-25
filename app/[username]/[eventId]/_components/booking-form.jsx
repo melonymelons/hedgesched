@@ -41,10 +41,7 @@ const BookingForm = ({ event, availability }) => {
   // Local UI state
   const [selectedDate, setSelectedDate] = React.useState(null);
   const [selectedTime, setSelectedTime] = React.useState(null);
-
-  useEffect(() => {
-    (async () => await fnUpdates())();
-    }, []); 
+  const [lastFetched, setLastFetched] = React.useState(null);
 
   // Get current time in Shanghai timezone
   const getShanghaiTime = () => {
@@ -57,6 +54,10 @@ const BookingForm = ({ event, availability }) => {
     });
   };
 
+  useEffect(() => {
+    (async () => await getBookedSlots())();
+    }, []); 
+    
   // Process availability considering timezone
   const processAvailability = () => {
     const currentHour = parseInt(getShanghaiTime().split(":")[0]);
@@ -77,12 +78,15 @@ const BookingForm = ({ event, availability }) => {
 
   const availableDatesMap = processAvailability();
 
-  // Filter available time slots
+  // Filter available time slots with cache busting
   const getAvailableTimeSlots = () => {
     if (!selectedDate) return [];
     
     const dateStr = format(selectedDate, 'yyyy-MM-dd');
     const allSlots = availableDatesMap.get(dateStr) || [];
+    
+    // Add cache busting by including lastFetched timestamp
+    const cacheBuster = lastFetched ? `?t=${lastFetched}` : '';
     const bookedSlotsSet = new Set(bookedSlotsData || []);
     
     return allSlots.filter(slot => !bookedSlotsSet.has(slot));
@@ -95,6 +99,7 @@ const BookingForm = ({ event, availability }) => {
       const dateStr = format(selectedDate, "yyyy-MM-dd");
       setValue("date", dateStr);
       fetchBookedSlots(event.id, dateStr);
+      setLastFetched(Date.now()); // Update cache buster
     }
   }, [selectedDate]);
 
@@ -109,7 +114,9 @@ const BookingForm = ({ event, availability }) => {
       reset();
       setSelectedTime(null);
       if (selectedDate) {
+        // Force refresh with new cache buster
         fetchBookedSlots(event.id, format(selectedDate, "yyyy-MM-dd"));
+        setLastFetched(Date.now());
       }
     }
   }, [bookingResult]);
