@@ -36,21 +36,16 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(main)/availability/page.js"
     ],
-    "/[username]/page": [
+    "/(main)/events/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/[username]/page.js"
+      "static/chunks/app/(main)/events/page.js"
     ],
     "/[username]/[eventId]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/[username]/[eventId]/page.css",
       "static/chunks/app/[username]/[eventId]/page.js"
-    ],
-    "/(main)/events/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(main)/events/page.js"
     ],
     "/(main)/meetings/page": [
       "static/chunks/webpack.js",
