@@ -45,11 +45,11 @@ const shanghaiTimeStr = new Date().toLocaleTimeString("en-US", {
   const date = parseISO(day.date);
 
     console.log(date);
-    /*
+    
     if (currentHour >= 12) {
       date.setDate(date.getDate() + 1);
     }
-    */
+    
     console.log("currenthour", currentHour);
     
     availableDatesMap.set(format(date, 'yyyy-MM-dd'), day.slots);
