@@ -1,3 +1,4 @@
+
 "use client";
 
 import { bookingSchema } from "@/app/lib/validators";
@@ -14,7 +15,7 @@ import useFetch from "@/hooks/use-fetch";
 import { createBooking, getBookedSlots } from "@/actions/bookings";
 
 const BookingForm = ({ event, availability }) => {
-  // Form state
+
   const {
     register,
     handleSubmit,
@@ -25,7 +26,6 @@ const BookingForm = ({ event, availability }) => {
     resolver: zodResolver(bookingSchema),
   });
 
-  // Data fetching states using useFetch
   const {
     loading: loadingSlots,
     data: bookedSlotsData,
@@ -38,15 +38,16 @@ const BookingForm = ({ event, availability }) => {
     fn: submitBooking,
   } = useFetch(createBooking);
 
-  // Local UI state
   const [selectedDate, setSelectedDate] = React.useState(null);
   const [selectedTime, setSelectedTime] = React.useState(null);
-
+  
   useEffect(() => {
     (async () => await fetchBookedSlots())();
     }, []); 
+  useEffect(() => {
+        (async () => await submitBooking())();
+        }, []); 
 
-  // Get current time in Shanghai timezone
   const getShanghaiTime = () => {
     return new Date().toLocaleTimeString("en-US", {
       timeZone: "Asia/Shanghai",
@@ -57,7 +58,6 @@ const BookingForm = ({ event, availability }) => {
     });
   };
 
-  // Process availability considering timezone
   const processAvailability = () => {
     const currentHour = parseInt(getShanghaiTime().split(":")[0]);
     const availableDatesMap = new Map();
@@ -77,7 +77,6 @@ const BookingForm = ({ event, availability }) => {
 
   const availableDatesMap = processAvailability();
 
-  // Filter available time slots
   const getAvailableTimeSlots = () => {
     if (!selectedDate) return [];
     
