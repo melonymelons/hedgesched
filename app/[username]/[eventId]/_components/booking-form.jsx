@@ -16,8 +16,13 @@ import { createBooking, getBookedSlots } from "@/actions/bookings";
 const BookingForm = ({ event, availability }) => {
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState(null);
-  const [bookedSlots, setBookedSlots] = useState([]);
-  const [loadingBookedSlots, setLoadingBookedSlots] = useState(false);
+  
+  // Replace local state with useFetch pattern
+  const {
+    loading: loadingBookedSlots,
+    data: bookedSlots,
+    fn: fnGetBookedSlots,
+  } = useFetch(getBookedSlots);
 
   const {
     register,
@@ -51,24 +56,14 @@ const BookingForm = ({ event, availability }) => {
 
   const timeSlots = selectedDate
     ? availableDatesMap.get(format(selectedDate, 'yyyy-MM-dd'))?.filter(slot => 
-        !bookedSlots.includes(slot)
+        !bookedSlots?.includes(slot)
       ) || []
     : [];
 
   useEffect(() => {
     if (selectedDate) {
       setValue("date", format(selectedDate, "yyyy-MM-dd"));
-      const fetchBookedSlots = async () => {
-        setLoadingBookedSlots(true);
-        try {
-          const dateStr = format(selectedDate, "yyyy-MM-dd");
-          const booked = await getBookedSlots(event.id, dateStr);
-          setBookedSlots(booked);
-        } finally {
-          setLoadingBookedSlots(false);
-        }
-      };
-      fetchBookedSlots();
+      fnGetBookedSlots(event.id, format(selectedDate, "yyyy-MM-dd"));
     }
   }, [selectedDate]);
 
@@ -105,14 +100,7 @@ const BookingForm = ({ event, availability }) => {
     
     // Refresh booked slots after successful booking
     if (selectedDate) {
-      setLoadingBookedSlots(true);
-      try {
-        const dateStr = format(selectedDate, "yyyy-MM-dd");
-        const booked = await getBookedSlots(event.id, dateStr);
-        setBookedSlots(booked);
-      } finally {
-        setLoadingBookedSlots(false);
-      }
+      await fnGetBookedSlots(event.id, format(selectedDate, "yyyy-MM-dd"));
     }
   };
 
@@ -172,7 +160,7 @@ const BookingForm = ({ event, availability }) => {
                   ))}
                 </div>
               ) : (
-                <p>加载中...</p>
+                <p></p>
               )}
             </div>
           )}
