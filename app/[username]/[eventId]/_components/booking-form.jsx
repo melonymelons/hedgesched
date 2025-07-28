@@ -46,7 +46,7 @@ const shanghaiTimeStr = new Date().toLocaleTimeString("en-US", {
 
     console.log(date);
     
-    if (currentHour >= 14) {
+    if (currentHour >= 15) {
       date.setDate(date.getDate() + 1);
     }
     
@@ -62,6 +62,7 @@ const shanghaiTimeStr = new Date().toLocaleTimeString("en-US", {
                                                     //     date.setDate(date.getDate() + 1); // force +1 day
   //  availableDatesMap.set(format(date, 'yyyy-MM-dd'), day.slots);
  // });
+            // ADDED test out the 
 
 
   const timeSlots = selectedDate
