@@ -14,9 +14,9 @@ import useFetch from "@/hooks/use-fetch";
 import { createBooking, getBookedSlots } from "@/actions/bookings";
 
 const BookingForm = ({ event, availability }) => {
-  const [selectedDate, setSelectedDate] = useState(null);
-  const [selectedTime, setSelectedTime] = useState(null);
 
+    const [selectedDate, setSelectedDate] = useState(null);
+    const [selectedTime, setSelectedTime] = useState(null);
   // Timezone handling
   const shanghaiTimeStr = new Date().toLocaleTimeString("en-US", {
     timeZone: "Asia/Shanghai",
@@ -74,6 +74,14 @@ const BookingForm = ({ event, availability }) => {
       setValue("time", selectedTime);
     }
   }, [selectedTime]);
+
+  useEffect(() => {
+    (async () => await setSelectedDate())();
+    }, []);
+
+  useEffect(() => {
+        (async () => await setSelectedTime())();
+        }, []);
 
   useEffect(() => {
     (async () => await fnGetBookedSlots())();
