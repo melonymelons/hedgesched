@@ -54,6 +54,8 @@ const BookingForm = ({ event, availability }) => {
     data: bookedSlots = [],
     fn: fnGetBookedSlots,
   } = useFetch(getBookedSlots);
+  
+  const [localBookedSlots, setLocalBookedSlots] = useState([]);  
 
   const {
     loading: loadingCreateBooking,
@@ -65,9 +67,12 @@ const BookingForm = ({ event, availability }) => {
     if (selectedDate) {
       const dateStr = format(selectedDate, "yyyy-MM-dd");
       setValue("date", dateStr);
-      fnGetBookedSlots(event.id, dateStr);
+      fnGetBookedSlots(event.id, dateStr).then((slots) => {
+        setLocalBookedSlots(slots || []);
+      });
     }
   }, [selectedDate]);
+  
 
   useEffect(() => {
     if (selectedTime) {
@@ -102,8 +107,11 @@ const BookingForm = ({ event, availability }) => {
     };
 
     await fnCreateBooking(bookingPayload);
-    await fnGetBookedSlots(event.id, format(selectedDate, "yyyy-MM-dd"));
-    setSelectedTime(null); // Reset selection
+
+    // Optimistically update UI without waiting for fetch delay
+    setLocalBookedSlots((prev) => [...prev, selectedTime]);
+    setSelectedTime(null);
+
   };
 
   if (bookingData) {
