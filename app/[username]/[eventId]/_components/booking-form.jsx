@@ -1,5 +1,4 @@
 "use client";
-export const dynamic = "force-dynamic";
 
 import { bookingSchema } from "@/app/lib/validators";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -82,10 +81,11 @@ const BookingForm = ({ event, availability }) => {
   }, [selectedTime]);
 
   const timeSlots =
-    selectedDate &&
-    availableDatesMap.get(format(selectedDate, "yyyy-MM-dd"))?.filter(
-      (slot) => !bookedSlots.includes(slot)
-    );
+  selectedDate &&
+  availableDatesMap.get(format(selectedDate, "yyyy-MM-dd"))?.filter(
+    (slot) => !localBookedSlots.includes(slot)
+  );
+
 
   const onSubmit = async (formData) => {
     if (!selectedDate || !selectedTime) {
