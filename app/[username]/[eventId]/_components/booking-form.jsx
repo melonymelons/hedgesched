@@ -46,7 +46,7 @@ const shanghaiTimeStr = new Date().toLocaleTimeString("en-US", {
 
     console.log(date);
     
-    if (currentHour >= 12) {
+    if (currentHour >= 13) {
       date.setDate(date.getDate() + 1);
     }
     
