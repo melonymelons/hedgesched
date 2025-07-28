@@ -16,17 +16,6 @@ import { createBooking, getBookedSlots } from "@/actions/bookings";
 const BookingForm = ({ event, availability }) => {
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState(null);
-  const [bookedSlots, setBookedSlots] = useState([]);
-  const [loadingSlots, setLoadingSlots] = useState(false);
-
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    setValue,
-  } = useForm({
-    resolver: zodResolver(bookingSchema),
-  });
 
   // Timezone handling
   const shanghaiTimeStr = new Date().toLocaleTimeString("en-US", {
@@ -50,26 +39,33 @@ const BookingForm = ({ event, availability }) => {
     availableDatesMap.set(format(date, 'yyyy-MM-dd'), day.slots);
   });
 
-  const timeSlots = selectedDate
-    ? availableDatesMap.get(format(selectedDate, 'yyyy-MM-dd'))?.filter(slot => 
-        !bookedSlots.includes(slot)
-      ) || []
-    : [];
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    setValue,
+  } = useForm({
+    resolver: zodResolver(bookingSchema),
+  });
+
+  // For booked slots
+  const {
+    loading: loadingBookedSlots,
+    data: bookedSlots = [],
+    fn: fnGetBookedSlots
+  } = useFetch(getBookedSlots);
+
+  // For creating booking
+  const {
+    loading: loadingCreateBooking,
+    data: bookingData,
+    fn: fnCreateBooking
+  } = useFetch(createBooking);
 
   useEffect(() => {
     if (selectedDate) {
       setValue("date", format(selectedDate, "yyyy-MM-dd"));
-      const fetchBookedSlots = async () => {
-        setLoadingSlots(true);
-        try {
-          const dateStr = format(selectedDate, "yyyy-MM-dd");
-          const booked = await getBookedSlots(event.id, dateStr);
-          setBookedSlots(booked);
-        } finally {
-          setLoadingSlots(false);
-        }
-      };
-      fetchBookedSlots();
+      fnGetBookedSlots(event.id, format(selectedDate, "yyyy-MM-dd"));
     }
   }, [selectedDate]);
 
@@ -79,9 +75,13 @@ const BookingForm = ({ event, availability }) => {
     }
   }, [selectedTime]);
 
-  const { loading, data, fn: fnCreateBooking } = useFetch(createBooking);
+  const timeSlots = selectedDate
+    ? availableDatesMap.get(format(selectedDate, 'yyyy-MM-dd'))?.filter(slot => 
+        !bookedSlots.includes(slot)
+      ) || []
+    : [];
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (formData) => {
     if (!selectedDate || !selectedTime) {
       console.error("未选择日期或时间");
       return;
@@ -95,17 +95,17 @@ const BookingForm = ({ event, availability }) => {
 
     const bookingData = {
       eventId: event.id,
-      name: data.name,
-      email: data.email,
+      name: formData.name,
+      email: formData.email,
       startTime: startTime.toISOString(),
       endTime: endTime.toISOString(),
-      additionalInfo: data.additionalInfo,
+      additionalInfo: formData.additionalInfo,
     };
 
     await fnCreateBooking(bookingData);
   };
 
-  if (data) {
+  if (bookingData) {
     return (
       <div className="text-center p-10 border bg-white">
         <h2 className="text-2xl font-bold mb-4">
@@ -148,7 +148,7 @@ const BookingForm = ({ event, availability }) => {
           {selectedDate && (
             <div className="mb-4">
               <h3 className="text-lg font-semibold mb-2">可用时段</h3>
-              {!loadingSlots ? (
+              {!loadingBookedSlots ? (
                 <div className="grid grid-cols-2 lg: grid-cols-3 gap-2">
                   {timeSlots.map((slot) => (
                     <Button
