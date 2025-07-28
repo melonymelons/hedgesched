@@ -83,7 +83,7 @@ const BookingForm = ({ event, availability }) => {
   const timeSlots =
   selectedDate &&
   availableDatesMap.get(format(selectedDate, "yyyy-MM-dd"))?.filter(
-    (slot) => !localBookedSlots.includes(slot)
+    (slot) => !localBookedSlots.includes(slot) // ✅ correct version
   );
 
 
