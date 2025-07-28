@@ -75,6 +75,14 @@ const BookingForm = ({ event, availability }) => {
     }
   }, [selectedTime]);
 
+  useEffect(() => {
+    (async () => await fnGetBookedSlots())();
+    }, []);
+
+  /*useEffect(() => {
+    (async () => await fnCreateBooking())();
+    }, []);*/
+
   const timeSlots = selectedDate
     ? availableDatesMap.get(format(selectedDate, 'yyyy-MM-dd'))?.filter(slot => 
         !bookedSlots.includes(slot)
