@@ -1,4 +1,5 @@
 "use client";
+export const dynamic = "force-dynamic";
 
 import { bookingSchema } from "@/app/lib/validators";
 import { zodResolver } from "@hookform/resolvers/zod";
