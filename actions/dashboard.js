@@ -20,7 +20,7 @@ export async function getLastestUpdates() {
 
       const now = new Date();
       const upcomingMeetings = await db.booking.findMany({
-          where:{
+          where: {
               userId:user.id,
               startTime: { gte: now } ,
           },
